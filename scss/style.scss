@@ -1,0 +1,12 @@
+@use "./_partials/queries";
+@use "./_partials/normalisation";
+
+body {
+  height: 100vh;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  background-color: aqua;
+}
