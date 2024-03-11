@@ -5,14 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
     <link rel="stylesheet" href="./scss/style.css" />
+    <script
+      src="https://kit.fontawesome.com/963119d396.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/utility.js" defer></script>
     <title>Welcome to Stacey's portfolio</title>
   </head>
-  <body>
-    <nav></nav>
-    <main>
-      <section></section>
+  <body class="wrapper">
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html" class="nav--active">Logo</a></li>
+        <div id="navMobile">
+          <li><a href="">About me</a></li>
+          <li><a href="">Work</a></li>
+          <li><a href="">Contact</a></li>
+        </div>
+      </ul>
+      <!-- hamburger menu / bar icon to toggle the nav links -->
+      <a href="javascript:void(0)" class="icon" onclick="mobileNavigation()">
+        <i class="fa-solid fa-bars"></i>
+      </a>
+    </nav>
+    <header class="header">
+      <h1>Work</h1>
+    </header>
+    <main class="main">
+      <section class="main__content">
+        <h3>Examples</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          rerum in quasi, assumenda omnis cumque reiciendis quibusdam ipsa nam
+          optio sit ullam earum libero voluptatem quos amet alias suscipit
+          officiis?
+        </p>
+      </section>
+      <section class="main__content">
+        <h3>Examples</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
+          rerum in quasi, assumenda omnis cumque reiciendis quibusdam ipsa nam
+          optio sit ullam earum libero voluptatem quos amet alias suscipit
+          officiis?
+        </p>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer">stacey @</footer>
   </body>
 </html>

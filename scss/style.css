@@ -309,14 +309,42 @@ template {
   display: none;
 }
 
-body {
+.wrapper {
+  display: grid;
   height: 100vh;
-  width: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+}
+
+nav {
+  background-color: hotpink;
+  grid-column: span 12;
+}
+@media only screen and (min-width: 768px) {
+  nav {
+    background-color: #ffc0cb;
+    grid-column: span 12;
+  }
+}
+
+header {
+  background-color: red;
+  grid-column: span 12;
 }
 
 main {
-  height: 100%;
-  background-color: aqua;
+  background-color: orange;
+  grid-column: span 12;
+  overflow: auto;
+}
+main .main__content {
+  height: 100vh;
+  border: 1px solid black;
+}
+
+footer {
+  background-color: blue;
+  grid-column: span 12;
 }
 
 /*# sourceMappingURL=style.css.map */

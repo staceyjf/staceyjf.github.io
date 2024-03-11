@@ -2,7 +2,7 @@
 
 $xs: 0;
 $sm: 576px; // phone
-$m: 768px; // table
+$m: 768px; // tablet
 $l: 992px; // large device like laptops
 $xl: 1200px; // desktops
 $xxl: 1400px; //large desktops
@@ -31,7 +31,7 @@ $xxl: 1400px; //large desktops
   }
 }
 
-@mixin desktop {
+@mixin large-desktop {
   @media only screen and (min-width: ($xxl)) {
     @content;
   }
