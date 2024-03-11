@@ -11,6 +11,33 @@
 nav {
   background-color: hotpink;
   grid-column: span 12;
+  overflow: hidden;
+  position: relative;
+
+  #navMobile {
+    display: none;
+  }
+
+  a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: aquamarine;
+    }
+
+    &.icon {
+      background-color: black;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &:hover {
+        background-color: aquamarine;
+      }
+    }
+  }
 
   @include queries.tablet {
     background-color: #ffc0cb;
