@@ -1,25 +1,38 @@
-$xs: 430px;
-$sm: 768px;
-$m: 820px;
-// ipad mini horizontal or ipad pro in portrait
-$l: 1024px;
-$xl: 1400px;
-$xxl: 1920px;
+// based on bootstrap breakpoints
+
+$xs: 0;
+$sm: 576px; // phone
+$m: 768px; // table
+$l: 992px; // large device like laptops
+$xl: 1200px; // desktops
+$xxl: 1400px; //large desktops
 
 @mixin phone {
-  @media only screen and (max-width: $sm) {
+  @media only screen and (min-width: $sm) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media only screen and (min-width: ($sm + 1px)) {
+  @media only screen and (min-width: ($m)) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media only screen and (min-width: ($l)) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media only screen and (min-width: ($m + 1px)) {
+  @media only screen and (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: ($xxl)) {
     @content;
   }
 }
