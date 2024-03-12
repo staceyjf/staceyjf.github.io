@@ -81,21 +81,35 @@ $font-stack: "Heebo", sans-serif;
   }
 }
 
-header {
-  background-color: red;
-  grid-column: span 12;
-  padding: 0 10px;
-}
-
 main {
-  background-color: orange;
   grid-column: span 12;
   overflow: auto; //scrolls if overflow
+}
 
-  .main__content {
-    height: 100vh;
-    border: 1px solid black;
-    padding: 0 10px;
+section {
+  height: 100vh;
+  // border: 1px solid black;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  .section__img-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+  }
+
+  .section__img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+  }
+
+  .section__title {
+    grid-column: 3 / span 8;
   }
 }
 

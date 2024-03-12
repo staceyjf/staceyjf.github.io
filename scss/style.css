@@ -367,21 +367,32 @@ template {
   }
 }
 
-header {
-  background-color: red;
-  grid-column: span 12;
-  padding: 0 10px;
-}
-
 main {
-  background-color: orange;
   grid-column: span 12;
   overflow: auto;
 }
-main .main__content {
+
+section {
   height: 100vh;
-  border: 1px solid black;
   padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+section .section__img-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+section .section__img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+}
+section .section__title {
+  grid-column: 3/span 8;
 }
 
 footer {
