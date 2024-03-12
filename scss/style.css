@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -314,15 +315,15 @@ template {
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Heebo", sans-serif;
 }
 
-.topnav {
+.top-nav {
   background-color: hotpink;
   grid-column: span 12;
   overflow: hidden;
 }
-.topnav a {
+.top-nav a {
   float: left;
   display: block;
   text-align: center;
@@ -330,36 +331,36 @@ template {
   text-decoration: none;
   font-size: 17px;
 }
-.topnav a:hover {
-  background-color: aquamarine;
-}
-.topnav a.__link--active {
+.top-nav a.top-nav__link--active {
   background-color: lightblue;
 }
-.topnav a.topnav__icon {
+.top-nav a.top-nav__icon {
   display: none;
 }
+.top-nav a:hover {
+  background-color: green;
+}
 @media only screen and (min-width: 0) and (max-width: 575px) {
-  .topnav {
+  .top-nav {
     background-color: #ffc0cb;
     grid-column: span 12;
   }
-  .topnav a:not(:first-child) {
+  .top-nav a:not(:first-child) {
     display: none;
   }
-  .topnav a.topnav__icon {
+  .top-nav a.top-nav__icon {
     float: right;
     display: block;
   }
-  .topnav.responsive {
+  .top-nav.responsive {
     position: relative;
   }
-  .topnav.responsive a {
+  .top-nav.responsive a {
     float: none;
     display: block;
     text-align: left;
   }
-  .topnav.responsive a.topnav__icon {
+  .top-nav.responsive a.top-nav__icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -369,6 +370,7 @@ template {
 header {
   background-color: red;
   grid-column: span 12;
+  padding: 0 10px;
 }
 
 main {
@@ -379,11 +381,13 @@ main {
 main .main__content {
   height: 100vh;
   border: 1px solid black;
+  padding: 0 10px;
 }
 
 footer {
   background-color: blue;
   grid-column: span 12;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */

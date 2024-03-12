@@ -1,24 +1,25 @@
 @use "./_partials/queries";
 @use "./_partials/normalisation";
-
-// colour variables
-$primary-color: purple;
-$secondary-color: green;
-$dark-color: black;
-$light-color: grey;
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+// -------------variables------------
+// colours
+$primary-color: #953297;
+$secondary-color: #bfbbbd;
+$dark-color: #191919;
+$light-color: #dbd7d9;
 
 // font
-$primary-font: "Courier New", Courier, monospace;
+$font-stack: "Heebo", sans-serif;
 
 .body-wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
-  font-family: $primary-font;
+  font-family: $font-stack;
 }
 
-.topnav {
+.top-nav {
   background-color: hotpink;
   grid-column: span 12;
   overflow: hidden;
@@ -31,16 +32,17 @@ $primary-font: "Courier New", Courier, monospace;
     text-decoration: none;
     font-size: 17px;
 
-    &:hover {
-      background-color: aquamarine;
-    }
-
-    &.__link--active {
+    &.top-nav__link--active {
       background-color: lightblue;
     }
 
-    &.topnav__icon {
+    &.top-nav__icon {
       display: none;
+    }
+
+    // TO DO: this is not working
+    &:hover {
+      background-color: green;
     }
   }
 
@@ -54,7 +56,7 @@ $primary-font: "Courier New", Courier, monospace;
         display: none;
       }
 
-      &.topnav__icon {
+      &.top-nav__icon {
         float: right;
         display: block;
       }
@@ -68,7 +70,7 @@ $primary-font: "Courier New", Courier, monospace;
         display: block;
         text-align: left;
 
-        &.topnav__icon {
+        &.top-nav__icon {
           position: absolute;
           right: 0;
           top: 0;
@@ -81,6 +83,7 @@ $primary-font: "Courier New", Courier, monospace;
 header {
   background-color: red;
   grid-column: span 12;
+  padding: 0 10px;
 }
 
 main {
@@ -91,10 +94,12 @@ main {
   .main__content {
     height: 100vh;
     border: 1px solid black;
+    padding: 0 10px;
   }
 }
 
 footer {
   background-color: blue;
   grid-column: span 12;
+  padding: 10px;
 }
