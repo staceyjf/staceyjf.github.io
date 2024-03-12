@@ -375,15 +375,16 @@ main {
 section {
   height: 100vh;
   padding: 0 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 1fr auto;
 }
 section .section__img-wrapper {
+  grid-column: 2/span 10;
   display: flex;
   justify-content: center;
-  padding: 2em;
+  padding: 1.5em;
 }
 section .section__img {
   width: 100%;
@@ -393,6 +394,7 @@ section .section__img {
 }
 section .section__title {
   grid-column: 3/span 8;
+  font-size: 1.75em;
 }
 
 footer {
