@@ -12,16 +12,18 @@
     <script src="./js/utility.js" defer></script>
     <title>Welcome to Stacey's portfolio</title>
   </head>
-  <body class="wrapper">
-    <nav>
-      <a href="index.html" class="nav__link--active">Logo</a>
-      <div id="navMobile">
-        <a href="">About me</a>
-        <a href="">Work</a>
-        <a href="">Contact</a>
-      </div>
+  <body class="body-wrapper">
+    <nav id="navMobile" class="topnav">
+      <a href="index.html" class="topnav__link--active">Logo</a>
+      <a href="">About me</a>
+      <a href="">Work</a>
+      <a href="">Contact</a>
       <!-- hamburger menu / bar icon to toggle the nav links -->
-      <a href="javascript:void(0)" class="icon" onclick="mobileNavigation()">
+      <a
+        href="javascript:void(0)"
+        class="topnav__icon"
+        onclick="mobileNavigation()"
+      >
         <i class="fa-solid fa-bars" style="color: #bab0d8"></i>
       </a>
     </nav>
@@ -30,8 +32,8 @@
     </header>
     <main class="main">
       <section class="main__content">
-        <h3>Examples</h3>
-        <p>
+        <h3 class="main__content-title">Examples</h3>
+        <p class="main__content-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
           rerum in quasi, assumenda omnis cumque reiciendis quibusdam ipsa nam
           optio sit ullam earum libero voluptatem quos amet alias suscipit
@@ -39,8 +41,8 @@
         </p>
       </section>
       <section class="main__content">
-        <h3>Examples</h3>
-        <p>
+        <h3 class="main__content-title">Examples</h3>
+        <p class="main__content-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae,
           rerum in quasi, assumenda omnis cumque reiciendis quibusdam ipsa nam
           optio sit ullam earum libero voluptatem quos amet alias suscipit

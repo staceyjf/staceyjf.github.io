@@ -1,9 +1,10 @@
 function mobileNavigation() {
   let x = document.getElementById("navMobile");
 
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  // toggle between adding and removing the 'responsive class'
+  if (x.className === "topnav") {
+    x.className += " responsive";
   } else {
-    x.style.display = "block";
+    x.className = "topnav";
   }
 }

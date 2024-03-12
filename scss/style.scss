@@ -10,7 +10,7 @@ $light-color: grey;
 // font
 $primary-font: "Courier New", Courier, monospace;
 
-.wrapper {
+.body-wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
@@ -18,20 +18,18 @@ $primary-font: "Courier New", Courier, monospace;
   font-family: $primary-font;
 }
 
-nav {
+.topnav {
   background-color: hotpink;
   grid-column: span 12;
   overflow: hidden;
-  position: relative;
-
-  #navMobile {
-    display: none;
-  }
 
   a {
+    float: left;
     display: block;
+    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 17px;
 
     &:hover {
       background-color: aquamarine;
@@ -41,21 +39,42 @@ nav {
       background-color: lightblue;
     }
 
-    &.icon {
-      background-color: black;
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      &:hover {
-        background-color: aquamarine;
-      }
+    &.topnav__icon {
+      display: none;
     }
   }
 
-  @include queries.tablet {
+  @include queries.phone {
     background-color: #ffc0cb;
     grid-column: span 12;
+
+    // displaying the burger menu and hidding everything except the logo/home a
+    a {
+      &:not(:first-child) {
+        display: none;
+      }
+
+      &.topnav__icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    &.responsive {
+      position: relative;
+
+      a {
+        float: none;
+        display: block;
+        text-align: left;
+
+        &.topnav__icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
   }
 }
 
