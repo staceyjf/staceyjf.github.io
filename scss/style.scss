@@ -1,11 +1,21 @@
 @use "./_partials/queries";
 @use "./_partials/normalisation";
 
+// colour variables
+$primary-color: purple;
+$secondary-color: green;
+$dark-color: black;
+$light-color: grey;
+
+// font
+$primary-font: "Courier New", Courier, monospace;
+
 .wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
+  font-family: $primary-font;
 }
 
 nav {
@@ -25,6 +35,10 @@ nav {
 
     &:hover {
       background-color: aquamarine;
+    }
+
+    &.__link--active {
+      background-color: lightblue;
     }
 
     &.icon {
