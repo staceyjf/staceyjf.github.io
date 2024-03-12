@@ -17,44 +17,45 @@ $font-stack: "Heebo", sans-serif;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
   font-family: $font-stack;
+  color: $dark-color;
 }
 
 .top-nav {
-  background-color: hotpink;
   grid-column: span 12;
   overflow: hidden;
 
   a {
-    float: left;
+    float: right;
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    color: $dark-color;
 
     &.top-nav__link--active {
-      background-color: lightblue;
+      color: $primary-color;
     }
 
     &.top-nav__icon {
       display: none;
     }
 
-    // TO DO: this is not working
     &:hover {
-      background-color: green;
+      background-color: $secondary-color;
     }
   }
 
   @include queries.phone {
-    background-color: #ffc0cb;
     grid-column: span 12;
 
     // displaying the burger menu and hidding everything except the logo/home a
     a {
-      &:not(:first-child) {
-        display: none;
-      }
+      // &:not(:first-child) {
+      //   display: none;
+      // }
+
+      display: none;
 
       &.top-nav__icon {
         float: right;

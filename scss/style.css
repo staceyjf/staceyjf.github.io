@@ -316,36 +316,36 @@ template {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
   font-family: "Heebo", sans-serif;
+  color: #191919;
 }
 
 .top-nav {
-  background-color: hotpink;
   grid-column: span 12;
   overflow: hidden;
 }
 .top-nav a {
-  float: left;
+  float: right;
   display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  color: #191919;
 }
 .top-nav a.top-nav__link--active {
-  background-color: lightblue;
+  color: #953297;
 }
 .top-nav a.top-nav__icon {
   display: none;
 }
 .top-nav a:hover {
-  background-color: green;
+  background-color: #bfbbbd;
 }
 @media only screen and (min-width: 0) and (max-width: 575px) {
   .top-nav {
-    background-color: #ffc0cb;
     grid-column: span 12;
   }
-  .top-nav a:not(:first-child) {
+  .top-nav a {
     display: none;
   }
   .top-nav a.top-nav__icon {
