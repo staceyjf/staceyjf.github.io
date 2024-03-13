@@ -337,6 +337,10 @@ template {
   margin-bottom: 1em;
 }
 
+a {
+  text-decoration: none;
+}
+
 .body-wrapper {
   display: grid;
   height: 100vh;
@@ -393,7 +397,6 @@ template {
 .top-nav a {
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
   color: #191919;
 }
 .top-nav a.top-nav__link--active {
