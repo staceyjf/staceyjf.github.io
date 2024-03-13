@@ -41,6 +41,11 @@ $light-color: #dbd7d9;
 
 a {
   text-decoration: none;
+  color: $dark-color;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 // -------------Body------------
@@ -177,6 +182,24 @@ section {
 
 // -------------contact Section------------
 .contact {
-  &__wrapper {
+  &__title {
+    grid-column: 2 / span 5;
+    text-align: center;
+    font-size: 5em;
+
+    &--1 {
+      grid-row: 1;
+    }
+    &--2 {
+      grid-row: 2;
+    }
+  }
+
+  &__options {
+    &-container {
+      grid-column: 8 / span 3;
+      grid-row: 1 / span 2;
+      align-self: flex-start;
+    }
   }
 }

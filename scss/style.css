@@ -339,6 +339,10 @@ template {
 
 a {
   text-decoration: none;
+  color: #191919;
+}
+a:hover {
+  color: #953297;
 }
 
 .body-wrapper {
@@ -353,24 +357,30 @@ a {
   font-size: 2.14em;
 }
 .body-wrapper h2 {
-  font-size: 1.5em;
+  font-size: 2.5em;
   margin: 0;
 }
 .body-wrapper h3 {
   font-size: 1.29em;
+}
+.body-wrapper h4 {
+  font-size: 1.1em;
 }
 .body-wrapper p {
   font-size: 1em;
 }
 @media only screen and (min-width: 768px) {
   .body-wrapper h1 {
-    font-size: 2.2em;
+    font-size: 5em;
   }
   .body-wrapper h2 {
-    font-size: 1.54em;
+    font-size: 4em;
   }
   .body-wrapper h3 {
-    font-size: 1.2em;
+    font-size: 2em;
+  }
+  .body-wrapper h4 {
+    font-size: 1.29em;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -378,10 +388,13 @@ a {
     font-size: 2.25em;
   }
   .body-wrapper h2 {
-    font-size: 1.56em;
+    font-size: 5em;
   }
   .body-wrapper h3 {
-    font-size: 1.25em;
+    font-size: 2em;
+  }
+  .body-wrapper h4 {
+    font-size: 1.5em;
   }
 }
 
@@ -480,6 +493,23 @@ section {
 }
 .splash__btn {
   text-decoration: none;
+}
+
+.contact__title {
+  grid-column: 2/span 5;
+  text-align: center;
+  font-size: 5em;
+}
+.contact__title--1 {
+  grid-row: 1;
+}
+.contact__title--2 {
+  grid-row: 2;
+}
+.contact__options-container {
+  grid-column: 8/span 3;
+  grid-row: 1/span 2;
+  align-self: flex-start;
 }
 
 /*# sourceMappingURL=style.css.map */
