@@ -1,6 +1,7 @@
-@use "./_partials/queries";
 @use "./_partials/normalisation";
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+@use "./_partials/queries";
+@use "./_partials/brand-variables" as bv;
+
 // -------------variables------------
 // colours
 $primary-color: #953297;
@@ -8,16 +9,13 @@ $secondary-color: #bfbbbd;
 $dark-color: #191919;
 $light-color: #dbd7d9;
 
-// font
-$font-stack: "Heebo", sans-serif;
-
 .body-wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
-  font-family: $font-stack;
   color: $dark-color;
+  @include bv.font-stack;
 }
 
 .top-nav {
@@ -30,7 +28,6 @@ $font-stack: "Heebo", sans-serif;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
     color: $dark-color;
 
     &.top-nav__link--active {
@@ -114,7 +111,6 @@ section {
 
   .section__title {
     grid-column: 3 / span 8;
-    font-size: 1.75em;
   }
 }
 

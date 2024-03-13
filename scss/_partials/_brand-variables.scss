@@ -1,5 +1,42 @@
-// colour variables
-$primary: purple;
-$secondary: green;
-$dark: black;
-$light: grey;
+@use "./queries";
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+
+@mixin font-stack {
+  $font-stack: "Heebo", sans-serif;
+  h1 {
+    font-size: 2.14em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.29em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  @include queries.tablet {
+    h1 {
+      font-size: 2.2em;
+    }
+    h2 {
+      font-size: 1.54em;
+    }
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+
+  @include queries.desktop {
+    h1 {
+      font-size: 2.25em;
+    }
+    h2 {
+      font-size: 1.56em;
+    }
+    h3 {
+      font-size: 1.25em;
+    }
+  }
+}

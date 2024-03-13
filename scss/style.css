@@ -315,8 +315,41 @@ template {
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto 1fr auto;
-  font-family: "Heebo", sans-serif;
   color: #191919;
+}
+.body-wrapper h1 {
+  font-size: 2.14em;
+}
+.body-wrapper h2 {
+  font-size: 1.5em;
+}
+.body-wrapper h3 {
+  font-size: 1.29em;
+}
+.body-wrapper p {
+  font-size: 1em;
+}
+@media only screen and (min-width: 768px) {
+  .body-wrapper h1 {
+    font-size: 2.2em;
+  }
+  .body-wrapper h2 {
+    font-size: 1.54em;
+  }
+  .body-wrapper h3 {
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .body-wrapper h1 {
+    font-size: 2.25em;
+  }
+  .body-wrapper h2 {
+    font-size: 1.56em;
+  }
+  .body-wrapper h3 {
+    font-size: 1.25em;
+  }
 }
 
 .top-nav {
@@ -329,7 +362,6 @@ template {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
   color: #191919;
 }
 .top-nav a.top-nav__link--active {
@@ -394,7 +426,6 @@ section .section__img {
 }
 section .section__title {
   grid-column: 3/span 8;
-  font-size: 1.75em;
 }
 
 footer {
