@@ -52,9 +52,15 @@ $light-color: #dbd7d9;
   grid-column: span 12;
   overflow: hidden;
 
+  .top-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
   a {
-    float: right;
-    display: block;
+    // float: right;
+    // display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -74,15 +80,20 @@ $light-color: #dbd7d9;
   }
 
   @include queries.phone {
-    grid-column: span 12;
+    .top-nav__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
 
-    // displaying the burger menu and hidding everything except the logo/home a
+    // displaying the burger menu and hid everything except the logo/home a
     a {
       display: none;
 
       &.top-nav__icon {
-        float: right;
+        align-self: flex-end;
         display: block;
+        max-width: 10%;
       }
     }
 

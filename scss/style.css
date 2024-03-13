@@ -385,9 +385,12 @@ template {
   grid-column: span 12;
   overflow: hidden;
 }
+.top-nav .top-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
 .top-nav a {
-  float: right;
-  display: block;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -403,15 +406,18 @@ template {
   background-color: #bfbbbd;
 }
 @media only screen and (min-width: 0) and (max-width: 575px) {
-  .top-nav {
-    grid-column: span 12;
+  .top-nav .top-nav__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
   .top-nav a {
     display: none;
   }
   .top-nav a.top-nav__icon {
-    float: right;
+    align-self: flex-end;
     display: block;
+    max-width: 10%;
   }
   .top-nav.responsive {
     position: relative;
