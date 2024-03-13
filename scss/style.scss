@@ -48,6 +48,12 @@ a {
   }
 }
 
+.grid-12-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
 // -------------Body------------
 .body-wrapper {
   display: grid;
@@ -131,11 +137,9 @@ main {
 
 // -------------Section------------
 section {
-  text-align: center;
+  // text-align: center;
   height: 100%;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(12, 1fr);
+  @extend .grid-12-12;
   row-gap: 0.5em;
 }
 
@@ -183,16 +187,16 @@ section {
 // -------------contact Section------------
 .contact {
   &__title {
-    grid-column: 2 / span 5;
+    grid-column: 3 / span 8;
     text-align: center;
-    font-size: 5em;
+    font-size: 2em;
 
     &--1 {
-      grid-row: 4 / span 2;
+      grid-row: 2;
       align-self: center;
     }
     &--2 {
-      grid-row: 6 / span 2;
+      grid-row: 3;
       align-self: center;
     }
   }
@@ -200,26 +204,26 @@ section {
   &__option {
     &-container {
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
+      grid-column: 3 / span 8;
+      row-gap: 0.25em;
 
       &--1 {
-        grid-row: 4;
-        grid-column: 8 / span 3;
+        grid-row: 5;
       }
       &--2 {
         grid-row: 6;
-        grid-column: 8 / span 3;
       }
       &--3 {
-        grid-row: 8;
-        grid-column: 8 / span 3;
+        grid-row: 7;
       }
     }
 
     &-icon {
       i {
-        font-size: 3em;
-        margin-right: 0.2em;
+        font-size: 2em;
+        text-align: left;
       }
     }
 
@@ -228,12 +232,66 @@ section {
     }
 
     &-p {
-      padding-left: 0.5em;
+      // padding-left: 0.2em;
       margin: 0;
     }
 
     &-h4 {
-      margin: 0.2em;
+      margin: 1em 0;
+    }
+  }
+
+  @include queries.tablet {
+    &__title {
+      grid-column: 2 / span 5;
+      font-size: 3.5em;
+
+      &--1 {
+        grid-row: 4 / span 2;
+      }
+      &--2 {
+        grid-row: 6 / span 2;
+      }
+    }
+
+    &__option {
+      &-container {
+        display: flex;
+        justify-content: flex-start;
+
+        &--1 {
+          grid-row: 4;
+          grid-column: 8 / span 3;
+        }
+        &--2 {
+          grid-row: 6;
+          grid-column: 8 / span 3;
+        }
+        &--3 {
+          grid-row: 8;
+          grid-column: 8 / span 3;
+        }
+      }
+
+      &-icon {
+        i {
+          font-size: 3em;
+          margin-right: 0.2em;
+        }
+      }
+
+      &-item {
+        text-align: left;
+      }
+
+      &-p {
+        padding-left: 0.5em;
+        margin: 0;
+      }
+
+      &-h4 {
+        margin: 0.2em;
+      }
     }
   }
 }
