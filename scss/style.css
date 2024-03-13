@@ -467,6 +467,10 @@ section .btn__wrapper__main {
   grid-row: 4;
   grid-column: 1/span 12;
 }
+section .btn__main {
+  text-decoration: none;
+}
+
 footer {
   background-color: blue;
   grid-column: span 12;

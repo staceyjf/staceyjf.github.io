@@ -152,6 +152,7 @@ section {
 
   .btn__main {
     @extend .btn;
+    text-decoration: none;
   }
 }
 
