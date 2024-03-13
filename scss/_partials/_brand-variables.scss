@@ -1,13 +1,16 @@
 @use "./queries";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
+$font: "Heebo", sans-serif;
+
 @mixin font-stack {
-  $font-stack: "Heebo", sans-serif;
+  font-family: $font;
   h1 {
     font-size: 2.14em;
   }
   h2 {
     font-size: 1.5em;
+    margin: 0;
   }
   h3 {
     font-size: 1.29em;
