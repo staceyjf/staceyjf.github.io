@@ -39,6 +39,7 @@ $light-color: #dbd7d9;
   margin-bottom: 1em;
 }
 
+// -------------Body------------
 .body-wrapper {
   display: grid;
   height: 100vh;
@@ -59,8 +60,6 @@ $light-color: #dbd7d9;
   }
 
   a {
-    // float: right;
-    // display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -115,35 +114,40 @@ $light-color: #dbd7d9;
   }
 }
 
+// -------------Main------------
 main {
   grid-column: span 12;
   overflow: auto; //scrolls if overflow
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 
+// -------------Section------------
 section {
   text-align: center;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto auto;
   row-gap: 0.5em;
+}
 
-  .section__img-wrapper {
+// -------------Section------------
+.splash {
+  &__img-wrapper {
     grid-column: 2 / span 10;
     display: flex;
     justify-content: center;
     padding: 1.5em;
   }
 
-  .section__img {
+  &__img {
     width: 100%;
     max-width: 200px;
     height: auto;
     border-radius: 50%;
   }
 
-  .section__title {
+  &__title {
     grid-column: 3 / span 8;
     font-size: 2.25em;
 
@@ -152,23 +156,18 @@ section {
     }
   }
 
-  .section__p {
+  &__p {
     grid-column: 3 / span 8;
   }
 
-  .btn__wrapper__main {
+  &__btn-wrapper {
     @extend .btn__wrapper;
     grid-row: 4;
     grid-column: 1 / span 12;
   }
 
-  .btn__main {
+  &__btn {
     @extend .btn;
     text-decoration: none;
   }
-}
-
-footer {
-  background-color: blue;
-  grid-column: span 12;
 }

@@ -310,7 +310,7 @@ template {
   display: none;
 }
 
-.btn, section .btn__main {
+.btn, .splash__btn {
   max-height: 50px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -325,12 +325,12 @@ template {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover, section .btn__main:hover {
+.btn:hover, .splash__btn:hover {
   color: #fff;
   background: #191919;
 }
 
-.btn__wrapper, section .btn__wrapper__main {
+.btn__wrapper, .splash__btn-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -437,50 +437,46 @@ template {
 main {
   grid-column: span 12;
   overflow: auto;
-  display: flex;
-  justify-content: center;
+  height: 100%;
 }
 
 section {
   text-align: center;
+  height: 100%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto auto;
   row-gap: 0.5em;
 }
-section .section__img-wrapper {
+
+.splash__img-wrapper {
   grid-column: 2/span 10;
   display: flex;
   justify-content: center;
   padding: 1.5em;
 }
-section .section__img {
+.splash__img {
   width: 100%;
   max-width: 200px;
   height: auto;
   border-radius: 50%;
 }
-section .section__title {
+.splash__title {
   grid-column: 3/span 8;
   font-size: 2.25em;
 }
-section .section__title span {
+.splash__title span {
   color: #953297;
 }
-section .section__p {
+.splash__p {
   grid-column: 3/span 8;
 }
-section .btn__wrapper__main {
+.splash__btn-wrapper {
   grid-row: 4;
   grid-column: 1/span 12;
 }
-section .btn__main {
+.splash__btn {
   text-decoration: none;
-}
-
-footer {
-  background-color: blue;
-  grid-column: span 12;
 }
 
 /*# sourceMappingURL=style.css.map */
