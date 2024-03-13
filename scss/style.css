@@ -539,7 +539,7 @@ section {
     grid-row: 4/span 2;
   }
   .contact__title--2 {
-    grid-row: 6/span 2;
+    grid-row: 7/span 2;
   }
   .contact__option-container {
     display: flex;
