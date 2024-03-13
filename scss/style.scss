@@ -32,17 +32,18 @@ $light-color: #dbd7d9;
   }
 }
 
-.button__wrapper {
+.btn__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .body-wrapper {
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 50px calc(100vh - 50px);
+  grid-template-rows: auto calc(100vh - var(--first-row-height));
   color: $dark-color;
   @include bv.font-stack;
 }
@@ -145,7 +146,7 @@ section {
   }
 
   .btn__wrapper__main {
-    @extend .btn__wrapper__main;
+    @extend .btn__wrapper;
     grid-row: 4;
     grid-column: 1 / span 12;
   }
