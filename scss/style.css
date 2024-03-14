@@ -641,8 +641,7 @@ section {
 }
 @media only screen and (min-width: 500px) {
   .more__title {
-    grid-column: 2/span 10;
-    grid-row: 1;
+    font-size: 2.75em;
   }
   .more__option-item--1 {
     grid-row: 4/span 5;
@@ -652,6 +651,14 @@ section {
   }
   .more__option-item--3 {
     grid-row: 13/span 5;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .more__title {
+    font-size: 5.5em;
+  }
+  .more__option-h4 {
+    font-size: 2em;
   }
 }
 

@@ -434,8 +434,7 @@ section {
   //--tablet media query---
   @include queries.large-phone {
     &__title {
-      grid-column: 2 / span 10;
-      grid-row: 1;
+      font-size: 2.75em;
     }
 
     &__option {
@@ -449,6 +448,19 @@ section {
         &--3 {
           grid-row: 13 / span 5;
         }
+      }
+    }
+  }
+
+  //--desktop media query---
+  @include queries.desktop {
+    &__title {
+      font-size: 5.5em;
+    }
+
+    &__option {
+      &-h4 {
+        font-size: 2em;
       }
     }
   }
