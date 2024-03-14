@@ -345,13 +345,13 @@ a:hover {
   color: #953297;
 }
 
-.grid-12-12, .more-snapshot, .contact, .splash {
+.grid-12-12, .contact, .splash {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
 
-.grid-12, .more {
+.grid-12, .more-snapshot, .more {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -686,6 +686,7 @@ section {
 .more-snapshot__wrapper {
   grid-row: 3/span 9;
   justify-content: center;
+  row-gap: 1em;
 }
 .more-snapshot__option__span {
   font-weight: 700;
@@ -698,24 +699,24 @@ section {
 }
 .more-snapshot__option-item {
   background-color: #dbd7d9;
-}
-.more-snapshot__option-item--1 {
-  grid-row: 4/span 5;
-}
-.more-snapshot__option-item--2 {
-  grid-row: 9/span 4;
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
 }
 .more-snapshot__option-item--3 {
-  grid-row: 13/span 5;
+  margin-bottom: 1em;
 }
 @media only screen and (min-width: 0) and (max-width: 499px) {
+  .more-snapshot {
+    overflow: auto;
+  }
   .more-snapshot__wrapper {
     grid-column: 2/span 10;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-    row-gap: 0.5em;
   }
 }
 @media only screen and (min-width: 500px) {
