@@ -359,41 +359,6 @@ a:hover {
   color: #191919;
   font-family: "Heebo", sans-serif;
 }
-.body-wrapper h1 {
-  font-size: 2.14em;
-}
-.body-wrapper h2 {
-  font-size: 2em;
-  margin: 0;
-}
-.body-wrapper h4 {
-  font-size: 1.1em;
-}
-.body-wrapper p {
-  font-size: 1em;
-}
-@media only screen and (min-width: 768px) {
-  .body-wrapper h1 {
-    font-size: 6em;
-  }
-  .body-wrapper h2 {
-    font-size: 5em;
-  }
-  .body-wrapper h4 {
-    font-size: 1.29em;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .body-wrapper h1 {
-    font-size: 7em;
-  }
-  .body-wrapper h2 {
-    font-size: 6em;
-  }
-  .body-wrapper h4 {
-    font-size: 1.5em;
-  }
-}
 
 .top-nav {
   grid-column: span 12;
@@ -496,20 +461,21 @@ section {
 }
 @media only screen and (min-width: 768px) {
   .splash__img-wrapper {
-    grid-row: 2/span 10;
+    grid-row: 3/span 8;
     grid-column: 8/span 4;
   }
   .splash__title {
-    grid-row: 3/span 7;
+    grid-row: 2/span 7;
     grid-column: 3/span 4;
     font-size: 4.5em;
+    margin: 0;
     align-self: center;
   }
   .splash__h3 {
-    grid-row: 10;
+    grid-row: 9;
     grid-column: 3/span 4;
     font-size: 2.5em;
-    align-self: center;
+    margin: 0;
   }
   .splash__btn-wrapper {
     grid-row: 11;
