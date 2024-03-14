@@ -345,10 +345,15 @@ a:hover {
   color: #953297;
 }
 
-.grid-12-12, section {
+.grid-12-12, .contact, .splash {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
+}
+
+.grid-12, .more {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .body-wrapper {

@@ -54,6 +54,11 @@ a {
   grid-template-rows: repeat(12, 1fr);
 }
 
+.grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
 // -------------Body------------
 .body-wrapper {
   display: grid;
@@ -139,12 +144,14 @@ main {
 section {
   // text-align: center;
   height: 100%;
-  @extend .grid-12-12;
+  // @extend .grid-12-12;
   row-gap: 0.5em;
 }
 
 // -------------Splash Section------------
 .splash {
+  @extend .grid-12-12;
+
   &__img-wrapper {
     grid-column: 2 / span 10;
     grid-row: 2;
@@ -245,6 +252,8 @@ section {
 
 // -------------contact Section------------
 .contact {
+  @extend .grid-12-12;
+
   &__title {
     grid-column: 3 / span 8;
     text-align: center;
@@ -387,6 +396,7 @@ section {
 // -------------more about Section------------
 .more {
   overflow: auto; //scrolls if overflow
+  @extend .grid-12;
 
   &__title {
     grid-column: 2 / span 10;
