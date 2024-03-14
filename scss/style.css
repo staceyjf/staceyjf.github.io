@@ -363,7 +363,7 @@ a:hover {
   font-size: 2.14em;
 }
 .body-wrapper h2 {
-  font-size: 2.5em;
+  font-size: 2em;
   margin: 0;
 }
 .body-wrapper h4 {
@@ -374,10 +374,10 @@ a:hover {
 }
 @media only screen and (min-width: 768px) {
   .body-wrapper h1 {
-    font-size: 5em;
+    font-size: 6em;
   }
   .body-wrapper h2 {
-    font-size: 4em;
+    font-size: 5em;
   }
   .body-wrapper h4 {
     font-size: 1.29em;
@@ -385,10 +385,10 @@ a:hover {
 }
 @media only screen and (min-width: 1200px) {
   .body-wrapper h1 {
-    font-size: 2.25em;
+    font-size: 7em;
   }
   .body-wrapper h2 {
-    font-size: 5em;
+    font-size: 6em;
   }
   .body-wrapper h4 {
     font-size: 1.5em;
@@ -466,9 +466,7 @@ section {
 }
 .splash__img {
   width: 100%;
-  max-width: 200px;
   height: auto;
-  border-radius: 50%;
 }
 .splash__title {
   grid-column: 3/span 8;
@@ -478,33 +476,44 @@ section {
 .splash__title span {
   color: #953297;
 }
-.splash__p {
+.splash__h3 {
   text-align: center;
   grid-column: 3/span 8;
+  font-size: 1.25em;
 }
 .splash__btn-wrapper {
-  grid-row: 4;
+  grid-row: 7;
   grid-column: 1/span 12;
 }
 .splash__btn {
   text-decoration: none;
 }
+@media only screen and (min-width: 0) and (max-width: 575px) {
+  .splash__img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
+}
 @media only screen and (min-width: 768px) {
   .splash__img-wrapper {
-    grid-row: 2/span 3;
+    grid-row: 2/span 10;
+    grid-column: 8/span 4;
   }
   .splash__title {
-    grid-row: 5/span 2;
-    grid-column: 3/span 8;
-    font-size: 5em;
+    grid-row: 3/span 7;
+    grid-column: 3/span 4;
+    font-size: 4.5em;
+    align-self: center;
   }
-  .splash__p {
-    grid-row: 8;
-    grid-column: 3/span 8;
+  .splash__h3 {
+    grid-row: 10;
+    grid-column: 3/span 4;
+    font-size: 2.5em;
+    align-self: center;
   }
   .splash__btn-wrapper {
     grid-row: 11;
-    grid-column: 1/span 12;
+    grid-column: 4/span 2;
   }
 }
 
@@ -554,12 +563,13 @@ section {
   .contact__title {
     grid-column: 2/span 5;
     font-size: 3.5em;
+    margin: 0;
   }
   .contact__title--1 {
     grid-row: 4/span 2;
   }
   .contact__title--2 {
-    grid-row: 7/span 2;
+    grid-row: 6/span 3;
   }
   .contact__option-container {
     display: flex;
@@ -585,7 +595,6 @@ section {
     text-align: left;
   }
   .contact__option-p {
-    padding-left: 0.5em;
     margin: 0;
   }
   .contact__option-h4 {

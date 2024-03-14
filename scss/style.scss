@@ -154,9 +154,9 @@ section {
 
   &__img {
     width: 100%;
-    max-width: 200px;
+    // max-width: 200px;
     height: auto;
-    border-radius: 50%;
+    // border-radius: 50%;
   }
 
   &__title {
@@ -169,14 +169,15 @@ section {
     }
   }
 
-  &__p {
+  &__h3 {
     text-align: center;
     grid-column: 3 / span 8;
+    font-size: 1.25em;
   }
 
   &__btn-wrapper {
     @extend .btn__wrapper;
-    grid-row: 4;
+    grid-row: 7;
     grid-column: 1 / span 12;
   }
 
@@ -185,27 +186,38 @@ section {
     text-decoration: none;
   }
 
-  // -------------tablet media query-----------
+  @include queries.phone {
+    &__img {
+      max-width: 200px;
+      border-radius: 50%;
+    }
+  }
+
+  //--tablet media query---
   @include queries.tablet {
     &__img-wrapper {
-      grid-row: 2 / span 3;
+      grid-row: 2 / span 10;
+      grid-column: 8 / span 4;
     }
 
     &__title {
-      grid-row: 5 / span 2;
-      grid-column: 3 / span 8;
-      font-size: 5em;
+      grid-row: 3 / span 7;
+      grid-column: 3 / span 4;
+      font-size: 4.5em;
+      align-self: center;
     }
 
-    &__p {
-      grid-row: 8;
-      grid-column: 3 / span 8;
+    &__h3 {
+      grid-row: 10;
+      grid-column: 3 / span 4;
+      font-size: 2.5em;
+      align-self: center;
     }
 
     &__btn-wrapper {
       @extend .btn__wrapper;
       grid-row: 11;
-      grid-column: 1 / span 12;
+      grid-column: 4 / span 2;
     }
   }
 }
@@ -271,12 +283,13 @@ section {
     &__title {
       grid-column: 2 / span 5;
       font-size: 3.5em;
+      margin: 0;
 
       &--1 {
         grid-row: 4 / span 2;
       }
       &--2 {
-        grid-row: 7 / span 2;
+        grid-row: 6 / span 3;
       }
     }
 
@@ -311,7 +324,7 @@ section {
       }
 
       &-p {
-        padding-left: 0.5em;
+        // padding-left: 0.5em;
         margin: 0;
       }
 
