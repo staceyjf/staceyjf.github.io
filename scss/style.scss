@@ -491,12 +491,29 @@ section {
   }
 }
 
-// -------------more about Section------------
+// -------------more about Section-----------
 .more-snapshot {
+  @extend .grid-12-12;
+
+  &__wrapper {
+    grid-row: 3 / span 9;
+    justify-content: center;
+  }
+
   &__option {
+    &__span {
+      font-weight: 700;
+    }
+    &__ul {
+      list-style: none;
+    }
+
+    &__li {
+      margin: 0;
+    }
+
     &-item {
-      grid-column: 2 / span 10;
-      background-color: red;
+      background-color: $light-color;
 
       &--1 {
         grid-row: 4 / span 5;
@@ -508,5 +525,29 @@ section {
         grid-row: 13 / span 5;
       }
     }
+  }
+
+  //--tablet media query---
+  @include queries.phone {
+    &__wrapper {
+      grid-column: 2 / span 10;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: stretch;
+      row-gap: 0.5em;
+    }
+  }
+
+  //--tablet media query---
+  @include queries.large-phone {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  //--desktop media query---
+  @include queries.desktop {
   }
 }

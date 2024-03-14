@@ -345,7 +345,7 @@ a:hover {
   color: #953297;
 }
 
-.grid-12-12, .contact, .splash {
+.grid-12-12, .more-snapshot, .contact, .splash {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
@@ -683,9 +683,21 @@ section {
   }
 }
 
+.more-snapshot__wrapper {
+  grid-row: 3/span 9;
+  justify-content: center;
+}
+.more-snapshot__option__span {
+  font-weight: 700;
+}
+.more-snapshot__option__ul {
+  list-style: none;
+}
+.more-snapshot__option__li {
+  margin: 0;
+}
 .more-snapshot__option-item {
-  grid-column: 2/span 10;
-  background-color: red;
+  background-color: #dbd7d9;
 }
 .more-snapshot__option-item--1 {
   grid-row: 4/span 5;
@@ -695,6 +707,22 @@ section {
 }
 .more-snapshot__option-item--3 {
   grid-row: 13/span 5;
+}
+@media only screen and (min-width: 0) and (max-width: 499px) {
+  .more-snapshot__wrapper {
+    grid-column: 2/span 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    row-gap: 0.5em;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .more-snapshot__wrapper {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
