@@ -162,7 +162,6 @@ section {
   &__img {
     width: 100%;
     max-width: 50%;
-    height: auto;
     border-radius: 50%;
   }
 
@@ -182,7 +181,7 @@ section {
     text-align: center;
     grid-column: 3 / span 8;
     grid-row: 6;
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 0;
   }
 
@@ -201,7 +200,7 @@ section {
   @include queries.large-phone {
     &__btn-wrapper {
       @extend .btn__wrapper;
-      grid-row: 10;
+      grid-row: 11;
     }
 
     &__title {
@@ -211,7 +210,7 @@ section {
 
     &__h3 {
       grid-row: 8 / span 2;
-      font-size: 1.65em;
+      font-size: 1.5em;
     }
   }
 
@@ -229,23 +228,23 @@ section {
 
     &__title {
       grid-row: 2 / span 7;
-      grid-column: 3 / span 4;
+      grid-column: 2 / span 5;
       font-size: 4em;
       margin: 0;
       align-self: center;
     }
 
     &__h3 {
-      grid-row: 9;
-      grid-column: 3 / span 4;
-      font-size: 2.5em;
+      grid-row: 8;
+      grid-column: 2 / span 5;
+      font-size: 2em;
       margin: 0;
       // align-self: center;
     }
 
     &__btn-wrapper {
-      grid-row: 11;
-      grid-column: 4 / span 2;
+      grid-row: 10;
+      grid-column: 2 / span 5;
     }
   }
 }
