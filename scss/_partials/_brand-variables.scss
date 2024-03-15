@@ -1,6 +1,11 @@
 @use "./queries";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
+$primary-color: #953297;
+$secondary-color: #bfbbbd;
+$dark-color: #191919;
+$light-color: #dbd7d9;
+
 $font: "Heebo", sans-serif;
 
 @mixin font-stack {

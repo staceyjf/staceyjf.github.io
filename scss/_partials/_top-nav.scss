@@ -1,0 +1,66 @@
+@use "./brand-variables" as bv;
+@use "./queries";
+
+.top-nav {
+  grid-column: span 12;
+  overflow: hidden;
+
+  .top-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  a {
+    text-align: center;
+    padding: 14px 16px;
+    color: bv.$dark-color;
+
+    &.top-nav__link--active {
+      color: bv.$primary-color;
+    }
+
+    &.top-nav__icon {
+      display: none;
+    }
+
+    &:hover {
+      background-color: bv.$secondary-color;
+    }
+  }
+
+  @include queries.phone {
+    .top-nav__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    // displaying the burger menu and hid everything except the logo/home a
+    a {
+      display: none;
+
+      &.top-nav__icon {
+        align-self: flex-end;
+        display: block;
+        max-width: 10%;
+      }
+    }
+
+    &.responsive {
+      position: relative;
+
+      a {
+        float: none;
+        display: block;
+        text-align: left;
+
+        &.top-nav__icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+}
