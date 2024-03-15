@@ -1,0 +1,106 @@
+@use "../_partials/site-normalisation" as n;
+@use "../_partials/brand-variables" as bv;
+@use "../_partials/queries";
+
+// -------------components------------
+@use "../_components/btn" as btn;
+
+// -------------------------------------------------Splash Section--------------------------------
+.splash {
+  @include n.grid-12-12;
+
+  &__img-wrapper {
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 50%;
+    border-radius: 50%;
+  }
+
+  &__title {
+    grid-column: 3 / span 8;
+    grid-row: 4;
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+
+    & span {
+      color: bv.$primary-color;
+    }
+  }
+
+  &__h3 {
+    text-align: center;
+    grid-column: 3 / span 8;
+    grid-row: 6;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  &__btn-wrapper {
+    @include btn.btn__wrapper;
+    grid-row: 10;
+    grid-column: 1 / span 12;
+  }
+
+  &__btn {
+    @include btn.btn;
+    text-decoration: none;
+  }
+
+  //--tablet media query---
+  @include queries.large-phone {
+    &__btn-wrapper {
+      grid-row: 11;
+    }
+
+    &__title {
+      grid-row: 4 / span 2;
+      font-size: 2.6em;
+    }
+
+    &__h3 {
+      grid-row: 8 / span 2;
+      font-size: 1.5em;
+    }
+  }
+
+  //--desktop media query---
+  @include queries.desktop {
+    &__img {
+      max-width: 100%;
+      border-radius: 0%;
+    }
+
+    &__img-wrapper {
+      grid-row: 3 / span 8;
+      grid-column: 8 / span 4;
+    }
+
+    &__title {
+      grid-row: 2 / span 7;
+      grid-column: 2 / span 5;
+      font-size: 4em;
+      margin: 0;
+      align-self: center;
+    }
+
+    &__h3 {
+      grid-row: 8;
+      grid-column: 2 / span 5;
+      font-size: 2em;
+      margin: 0;
+      // align-self: center;
+    }
+
+    &__btn-wrapper {
+      grid-row: 10;
+      grid-column: 2 / span 5;
+    }
+  }
+}

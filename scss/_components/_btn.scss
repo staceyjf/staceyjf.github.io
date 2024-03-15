@@ -2,7 +2,7 @@
 @use "../_partials/queries";
 
 // button
-.btn {
+@mixin btn {
   max-height: 50px;
   cursor: pointer;
   border: 2px solid transparent;
