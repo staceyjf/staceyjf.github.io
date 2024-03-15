@@ -1,0 +1,25 @@
+@use "../_partials/brand-variables" as bv;
+@use "../_partials/queries";
+
+// ---------------------------------------------Body----------------------------------------------
+.body-wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto calc(100vh - var(--first-row-height));
+  color: bv.$dark-color;
+  @include bv.font-stack;
+}
+
+// ------------------------------------------Main------------------------------------------------
+main {
+  grid-column: span 12;
+  height: 100%;
+  overflow: auto; //scrolls if overflow
+}
+
+// -------------------------------Section-------------------------------------------
+section {
+  height: 100%;
+  row-gap: 0.5em;
+}
