@@ -49,7 +49,7 @@
   }
 
   &__btn {
-    @include btn.btn;
+    @extend btn, .btn !optional;
     text-decoration: none;
   }
 
