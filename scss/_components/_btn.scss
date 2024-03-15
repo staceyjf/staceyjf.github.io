@@ -1,5 +1,5 @@
-@use "./brand-variables" as bv;
-@use "./queries";
+@use "../_partials/brand-variables" as bv;
+@use "../_partials/queries";
 
 // button
 .btn {
