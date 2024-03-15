@@ -1,9 +1,14 @@
 @use "./_partials/normalisation";
+@use "./_partials/site-normalisation";
 @use "./_partials/queries";
 @use "./_partials/brand-variables" as bv;
+
 // -------------components------------
 @use "./_components/top-nav";
 @use "./_components/btn" as btn;
+
+// -------------pages-----------------
+@use "./_pages/contact.scss";
 
 // -------------general rules------------
 a {
@@ -341,149 +346,6 @@ section {
         &--3 {
           grid-row: 10 / span 2;
         }
-      }
-    }
-  }
-}
-
-// -----------------------------------contact Section---------------------------------------
-.contact {
-  @extend .grid-12-12;
-
-  &__title {
-    grid-column: 3 / span 8;
-    text-align: center;
-    font-size: 1.2em;
-    margin: 0;
-
-    &--1 {
-      grid-row: 2;
-      align-self: center;
-    }
-    &--2 {
-      grid-row: 4 / span 2;
-      align-self: center;
-    }
-  }
-
-  &__option {
-    &-container {
-      display: flex;
-      flex-direction: column;
-      grid-column: 3 / span 8;
-      row-gap: 0.5em;
-
-      &--1 {
-        grid-row: 8;
-      }
-      &--2 {
-        grid-row: 9;
-      }
-      &--3 {
-        grid-row: 10;
-      }
-    }
-
-    &-icon {
-      i {
-        font-size: 2em;
-        text-align: left;
-        margin-bottom: 0.15em;
-      }
-    }
-
-    &-item {
-      text-align: left;
-    }
-
-    &-p {
-      margin: 0;
-    }
-
-    &-h4 {
-      margin: 0.2em;
-    }
-  }
-
-  //--tablet media query---
-  @include queries.large-phone {
-    &__title {
-      grid-column: 3 / span 8;
-      font-size: 2em;
-
-      &--2 {
-        grid-row: 4 / span 3;
-      }
-    }
-
-    &__option {
-      &-icon {
-        i {
-          font-size: 2.5em;
-        }
-      }
-
-      &-p {
-        font-size: 1em;
-      }
-
-      &-h4 {
-        font-size: 1.5em;
-      }
-    }
-  }
-
-  //--desktop media query---
-  @include queries.desktop {
-    &__title {
-      grid-column: 2 / span 5;
-      font-size: 3.25em;
-      margin: 0;
-
-      &--1 {
-        grid-row: 4 / span 2;
-      }
-      &--2 {
-        grid-row: 6 / span 3;
-      }
-    }
-
-    &__option {
-      &-container {
-        display: flex;
-        justify-content: flex-start;
-
-        &--1 {
-          grid-row: 4;
-          grid-column: 8 / span 3;
-        }
-        &--2 {
-          grid-row: 6;
-          grid-column: 8 / span 3;
-        }
-        &--3 {
-          grid-row: 8;
-          grid-column: 8 / span 3;
-        }
-      }
-
-      &-icon {
-        i {
-          font-size: 3em;
-          margin-right: 0.2em;
-        }
-      }
-
-      &-item {
-        text-align: left;
-      }
-
-      &-p {
-        font-size: 1.5em;
-      }
-
-      &-h4 {
-        font-size: 2em;
       }
     }
   }

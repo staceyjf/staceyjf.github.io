@@ -1,0 +1,22 @@
+@use "../_partials/brand-variables" as bv;
+@use "../_partials/queries";
+
+@mixin a {
+  text-decoration: none;
+  color: bv.$dark-color;
+
+  &:hover {
+    color: bv.$primary-color;
+  }
+}
+
+@mixin grid-12-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+@mixin grid-12 {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
