@@ -382,13 +382,6 @@ template {
   background: #191919;
 }
 
-.btn__wrapper, .splash__btn-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1em;
-}
-
 a {
   text-decoration: none;
   color: #191919;
@@ -457,6 +450,10 @@ section {
   margin: 0;
 }
 .splash__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
   grid-row: 10;
   grid-column: 1/span 12;
 }
