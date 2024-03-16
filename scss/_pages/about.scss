@@ -9,7 +9,7 @@
   &__title {
     grid-column: 2 / span 11;
     grid-row: 2;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
 
   &__wrapper {
@@ -26,6 +26,7 @@
 
     &__li {
       font-weight: 700;
+      line-height: 1.5;
     }
 
     &-item {
@@ -58,6 +59,8 @@
   @include queries.large-phone {
     &__title {
       font-size: 2.75em;
+      align-content: center;
+      grid-row: 1;
     }
 
     &__wrapper {
@@ -79,6 +82,11 @@
 
   //--desktop media query---
   @include queries.desktop {
+    &__title {
+      font-size: 5em;
+      grid-row: 2;
+    }
+
     &__wrapper {
       grid-column: 2 / span 10;
 

@@ -506,7 +506,7 @@ section {
 .snapshot__title {
   grid-column: 2/span 11;
   grid-row: 2;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .snapshot__wrapper {
   grid-column: 1/span 12;
@@ -519,6 +519,7 @@ section {
 }
 .snapshot__option__li {
   font-weight: 700;
+  line-height: 1.5;
 }
 .snapshot__option-item {
   background-color: #191919;
@@ -540,6 +541,8 @@ section {
 @media only screen and (min-width: 500px) {
   .snapshot__title {
     font-size: 2.75em;
+    align-content: center;
+    grid-row: 1;
   }
   .snapshot__wrapper.swiper {
     width: 400px;
@@ -553,6 +556,10 @@ section {
   }
 }
 @media only screen and (min-width: 1200px) {
+  .snapshot__title {
+    font-size: 5em;
+    grid-row: 2;
+  }
   .snapshot__wrapper {
     grid-column: 2/span 10;
   }
@@ -587,12 +594,12 @@ section {
 .more {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 1fr repeat(5, 1fr);
 }
 .more__title {
-  grid-column: 2/span 10;
+  grid-column: 2/span 11;
   grid-row: 2;
-  margin: 0;
-  font-size: 1.8em;
+  font-size: 1.5em;
 }
 .more__option-item {
   grid-column: 2/span 10;
@@ -603,17 +610,16 @@ section {
   padding: 0.75;
 }
 .more__option-item--1 {
-  grid-row: 4/span 5;
+  grid-row: 3/span 3;
 }
 .more__option-item--2 {
-  grid-row: 9/span 4;
+  grid-row: 6/span 3;
 }
 .more__option-item--3 {
-  grid-row: 13/span 5;
+  grid-row: 9/span 3;
 }
 .more__option-h4 {
   margin: 0 0 0.25em 0;
-  font-size: 1.5em;
 }
 @media only screen and (min-width: 500px) {
   .more {
