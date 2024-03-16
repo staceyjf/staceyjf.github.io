@@ -500,17 +500,17 @@ section {
 .snapshot {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 2em;
 }
 .snapshot__title {
   grid-column: 2/span 11;
-  grid-row: 2;
+  grid-row: 1;
   font-size: 1.5em;
 }
 .snapshot__wrapper {
   grid-column: 1/span 12;
-  grid-row: 3;
-  align-self: center;
+  grid-row: 2;
 }
 .snapshot__option__ul {
   list-style: none;
@@ -528,7 +528,7 @@ section {
 @media only screen and (min-width: 0) and (max-width: 499px) {
   .snapshot__wrapper.swiper {
     width: 80%;
-    height: 80%;
+    height: 60%;
   }
   .snapshot .swiper-button-prev {
     color: #bfbbbd;
@@ -538,16 +538,13 @@ section {
   }
 }
 @media only screen and (min-width: 500px) {
-  .snapshot {
-    grid-template-rows: auto auto 1fr 0.25fr;
-  }
   .snapshot__title {
     font-size: 2.75em;
     align-content: center;
   }
   .snapshot__wrapper.swiper {
     width: 80%;
-    height: 80%;
+    height: 60%;
   }
   .snapshot .swiper-button-prev {
     color: #bfbbbd;
@@ -575,16 +572,17 @@ section {
 .work {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto auto 1fr;
+  grid-template-rows: auto 1fr;
+  row-gap: 2em;
 }
 .work__title {
   grid-column: 2/span 11;
-  grid-row: 2;
+  grid-row: 1;
   font-size: 1.5em;
 }
 .work__wrapper {
   grid-column: 1/span 12;
-  grid-row: 3;
+  grid-row: 2;
 }
 .work .swiper {
   width: 250px;
