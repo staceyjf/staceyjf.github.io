@@ -6,13 +6,9 @@
   display: grid;
   height: 100vh;
   grid-template-columns: repeat(12, 1fr);
-  // grid-template-rows: auto calc(100vh - var(--first-row-height));
-  // new
   grid-template-rows: auto 1fr;
   color: bv.$dark-color;
   @include bv.font-stack;
-  padding-top: 50px;
-
   @include queries.phone {
     &.menu-open {
       padding-top: 0;
@@ -28,9 +24,8 @@ main {
 
 // -------------------------------Section-------------------------------------------
 section {
-  // height: 100%;
-  //new
   border: red solid 1px;
-  height: calc(100vh - 50px);
+  height: 100vh;
+  padding-top: 50px;
   row-gap: 0.5em;
 }

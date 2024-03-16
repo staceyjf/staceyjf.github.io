@@ -372,7 +372,6 @@ template {
   grid-template-rows: auto 1fr;
   color: #191919;
   font-family: "Heebo", sans-serif;
-  padding-top: 50px;
 }
 @media only screen and (min-width: 0) and (max-width: 499px) {
   .body-wrapper.menu-open {
@@ -387,7 +386,8 @@ main {
 
 section {
   border: red solid 1px;
-  height: calc(100vh - 50px);
+  height: 100vh;
+  padding-top: 50px;
   row-gap: 0.5em;
 }
 
@@ -560,7 +560,6 @@ section {
 @media only screen and (min-width: 1200px) {
   .snapshot__title {
     font-size: 5em;
-    grid-row: 2;
   }
   .snapshot__wrapper {
     grid-column: 2/span 10;
@@ -590,11 +589,11 @@ section {
   align-self: center;
 }
 .work .swiper {
-  width: 90%;
+  width: 250px;
 }
 .work .mySwiper2 {
-  width: 90%;
-  height: 300px;
+  width: 250px;
+  height: 250px;
 }
 .work .mySwiper {
   height: 30%;
@@ -623,38 +622,20 @@ section {
   color: #953297;
 }
 @media only screen and (min-width: 500px) {
-  .work {
-    grid-template-rows: auto auto 1fr 0.25fr;
-  }
   .work__title {
     font-size: 2.75em;
-    align-content: center;
   }
-  .work__wrapper.swiper {
-    width: 80%;
-    height: 80%;
+  .work .swiper {
+    width: 380px;
   }
-  .work .swiper-button-prev {
-    color: #bfbbbd;
-  }
-  .work .swiper-button-next {
-    color: #953297;
+  .work .mySwiper2 {
+    width: 380px;
+    height: 380px;
   }
 }
 @media only screen and (min-width: 1200px) {
   .work__title {
     font-size: 5em;
-    grid-row: 2;
-  }
-  .work__wrapper {
-    grid-column: 2/span 10;
-  }
-  .work__wrapper.swiper {
-    width: 100%;
-    height: 250px;
-  }
-  .work__option-item--grey {
-    background-color: #bfbbbd;
   }
 }
 
