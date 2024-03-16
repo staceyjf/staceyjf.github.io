@@ -7,13 +7,15 @@
 
 // -------------------------------------------------Splash Section--------------------------------
 .splash {
-  @include n.grid-12-12;
+  @include n.grid-12;
+  grid-template-rows: auto 0.1fr repeat(3, 1fr);
 
   &__img-wrapper {
     grid-column: 2 / span 10;
-    grid-row: 2;
+    grid-row: 1;
     display: flex;
     justify-content: center;
+    margin-top: 1em;
   }
 
   &__img {
@@ -24,7 +26,7 @@
 
   &__title {
     grid-column: 3 / span 8;
-    grid-row: 4;
+    grid-row: 3;
     font-size: 2em;
     text-align: center;
     margin: 0;
@@ -37,35 +39,33 @@
   &__h3 {
     text-align: center;
     grid-column: 3 / span 8;
-    grid-row: 6;
+    grid-row: 4;
     font-size: 1em;
     margin: 0;
   }
 
   &__btn-wrapper {
     @include btn.btn__wrapper;
-    grid-row: 10;
+    grid-row: 5;
     grid-column: 1 / span 12;
+    justify-content: center;
   }
 
   &__btn {
     @extend btn, .btn !optional;
     text-decoration: none;
+    align-self: flex-start;
   }
 
   //--tablet media query---
   @include queries.large-phone {
-    &__btn-wrapper {
-      grid-row: 11;
-    }
+    row-gap: 1em;
 
     &__title {
-      grid-row: 4 / span 2;
       font-size: 2.6em;
     }
 
     &__h3 {
-      grid-row: 8 / span 2;
       font-size: 1.5em;
     }
   }
