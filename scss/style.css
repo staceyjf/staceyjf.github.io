@@ -587,13 +587,14 @@ section {
 .work__wrapper {
   grid-column: 1/span 12;
   grid-row: 3;
-  align-self: center;
+}
+.work__wrapper.swiper-container {
+  background-color: red;
 }
 .work__wrapper.swiper {
   width: 300px;
   height: 300px;
   padding: 50px;
-  background-color: red;
 }
 .work .swiper-button-prev-2 {
   color: #bfbbbd;

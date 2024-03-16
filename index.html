@@ -64,7 +64,7 @@
         <h1 class="snapshot__title">Quick Snapshot</h1>
 
         <!----------------------------swiper.js add----------------------->
-        <div class="snapshot__wrapper swiper">
+        <div class="snapshot__wrapper swiper" id="snapshotSwiper">
           <div class="swiper-wrapper">
             <div class="snapshot__option-item swiper-slide">
               <p>In my technical toolbox</p>
@@ -101,97 +101,53 @@
           </div>
           <!-- Previous button -->
           <div class="swiper-button-prev"></div>
-
           <!-- Next button -->
           <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
         </div>
       </section>
 
       <section class="work" id="work-section">
         <h1 class="work__title">Work</h1>
 
-        <div class="swiper" id="workSwiper">
-          <div class="swiper-wrapper">
-            <div class="work work__1">
-              <div class="swiper-slide">
-                <img src="" alt="" />
+        <!----------------------------swiper.js add----------------------->
+        <div class="work__wrapper swiper-container">
+          <div class="swiper mySwiper2" id="workSwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_1">
+                <!-- <img src="" alt="" /> -->
+                Slide 1
               </div>
-              <div class="swiper-textbox">
-                <p class="swiper-text-large">Mayday Mum</p>
-                <p class="swiper-text-small">
-                  Node.js &bull; Express &bull; MongoDB &bull; Mongoose &bull;
-                  React &bull; Material UI &bull; Cloudinary &bull; Git &bull;
-                  GitHub
-                </p>
+              <div class="swiper-slide slide_2">
+                <!-- <img src="" alt="" /> -->
+                Slide 2
               </div>
-              <!-- <div class="work__option-item work__option-item--1">
-                <h4 class="work__option-h4">Mayday Mum</h4>
-                <p class="work__option-p">
-                  Node.js &bull; Express &bull; MongoDB &bull; Mongoose &bull;
-                  React &bull; Material UI &bull; Cloudinary &bull; Git &bull;
-                  GitHub
-                </p>
-              </div> -->
+              <div class="swiper-slide slide_3">
+                <!-- <img src="" alt="" /> -->
+                Slide 3
+              </div>
+              <div class="swiper-slide slide_4">
+                <!-- <img src="" alt="" /> -->
+                slide 4
+              </div>
+              <div class="swiper-slide slide 5">
+                <!-- <img src="" alt="" /> -->
+                Slide 5
+              </div>
             </div>
+            <div class="swiper-button-prev-1"></div>
+            <div class="swiper-button-next-1"></div>
+          </div>
 
-            <div class="work work__2">
-              <div class="swiper-slide">
-                <img src="" alt="" />
-              </div>
-              <div class="swiper-textbox">
-                <p class="swiper-text-large">Happily Ever Avatar</p>
-                <p class="swiper-text-small">
-                  JavaScript &bull; CSS &bull; HTML &bull; Replicate API &bull;
-                  Instant-ID AI &bull; Heroku
-                </p>
-              </div>
-              <!-- <div class="work__option-item work__option-item--1">
-                <h4 class="work__option-h4">Happily Ever Avatar</h4>
-                <p class="work__option-p">
-                  JavaScript &bull; CSS &bull; HTML &bull; Replicate API &bull;
-                  Instant-ID AI &bull; Heroku
-                </p>
-              </div> -->
-            </div>
-
-            <div class="work work__3">
-              <div class="swiper-slide">
-                <img src="" alt="" />
-              </div>
-              <div class="swiper-textbox">
-                <p class="swiper-text-large">Foliage Analyst</p>
-                <p class="swiper-text-small">
-                  Python &bull; Bootstrap &bull; Django &bull; PostgresQL
-                </p>
-              </div>
-              <!-- <div class="work__option-item work__option-item--1">
-                <h4 class="work__option-h4">Foliage Analyst</h4>
-                <p class="work__option-p">
-                  Python &bull; Bootstrap &bull; Django &bull; PostgresQL
-                </p>
-              </div> -->
-            </div>
-
-            <div class="work work__4">
-              <div class="swiper-slide">
-                <img src="" alt="" />
-              </div>
-              <div class="swiper-textbox">
-                <p class="swiper-text-large">Foliage Analyst</p>
-                <p class="swiper-text-small">
-                  Python &bull; Bootstrap &bull; Django &bull; PostgresQL
-                </p>
-              </div>
-              <!-- <div class="work__option-item work__option-item--1">
-                <h4 class="work__option-h4">Foliage Analyst</h4>
-                <p class="work__option-p">
-                  Python &bull; Bootstrap &bull; Django &bull; PostgresQL
-                </p>
-              </div> -->
+          <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide slide_1">Slide 1</div>
+              <div class="swiper-slide slide_2">Slide 2</div>
+              <div class="swiper-slide slide_3">Slide 3</div>
+              <div class="swiper-slide slide_4">Slide 4</div>
+              <div class="swiper-slide slide_5">Slide 5</div>
             </div>
           </div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
         </div>
       </section>
 
