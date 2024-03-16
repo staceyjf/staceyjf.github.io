@@ -3,12 +3,22 @@
 @use "../_partials/queries";
 
 .work {
-  @include n.grid-12-12;
-
   &__title {
     grid-column: 2 / span 10;
     grid-row: 2;
     margin: 0;
     font-size: 1.8em;
+  }
+  &__1 {
+    grid-row: 3;
+    background-color: red;
+  }
+  &__2 {
+    grid-row: 4;
+    background-color: blue;
+  }
+  &__3 {
+    grid-row: 5;
+    background-color: green;
   }
 }

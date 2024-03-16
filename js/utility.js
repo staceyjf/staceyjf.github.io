@@ -1,22 +1,13 @@
 function mobileNavigation() {
-  let x = document.getElementById("navMobile");
+  let burger = document.getElementById("navMobile");
+  let bodyWrapper = document.querySelector(".body-wrapper");
 
-  // toggle between adding and removing the 'responsive class'
-  if (x.className === "top-nav") {
-    x.className += " responsive";
+  // toggle between adding and removing the 'responsive' and 'menu-open' classes
+  if (!burger.classList.contains("responsive")) {
+    burger.classList.add("responsive");
+    bodyWrapper.classList.add("menu-open");
   } else {
-    x.className = "top-nav";
+    burger.classList.remove("responsive");
+    bodyWrapper.classList.remove("menu-open");
   }
 }
-
-// dynamically changing top-nav
-document.addEventListener("DOMContentLoaded", (event) => {
-  if (window.location.pathname.endsWith("contact.html")) {
-    //
-    const navLinks = document.querySelectorAll(".top-nav a");
-
-    navLinks.forEach((link) => {
-      link.style.color = "your desired color here"; // replace with your color
-    });
-  }
-});

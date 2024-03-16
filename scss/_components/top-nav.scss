@@ -4,6 +4,10 @@
 .top-nav {
   grid-column: span 12;
   overflow: hidden;
+  // new
+  position: fixed;
+  width: 100%;
+  top: 0;
 
   .top-nav__wrapper {
     display: flex;
