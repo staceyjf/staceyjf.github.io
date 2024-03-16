@@ -35,8 +35,8 @@ navLinks.forEach((link) => {
   });
 });
 
-// swiper.js initalizer taking from the docs
-const swiper = new Swiper(".swiper", {
+// swiper.js initalizer taking from the docs for #snapshot-section
+const snapshotSwiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   navigation: {
@@ -46,10 +46,50 @@ const swiper = new Swiper(".swiper", {
   slidesPerView: 1,
   spaceBetween: 10,
   breakpoints: {
+    //set the slides for the desktop view
     1200: {
       slidesPerView: 3,
       spaceBetween: 50,
     },
   },
 });
-console.log(swiper);
+console.log(snapshotSwiper);
+
+// // swiper.js initalizer for #work-section
+// const workSwiper = new Swiper("#workSwiper", {
+//   slidesPerView: "auto",
+//   spaceBetween: 40,
+//   centeredSlides: true,
+//   grabcursor: true,
+//   loop: true,
+//   preloadImages: true,
+
+//   breakpoints: {
+//     300: {
+//       slidesPerView: 1.5,
+//       spaceBetween: 15,
+//     },
+
+//     768: {
+//       slidesPerView: 3,
+//       spaceBetween: 20,
+//     },
+
+//     1280: {
+//       slidesPerView: 4,
+//       spaceBetween: 30,
+//     },
+
+//     1920: {
+//       slidesPerView: 5,
+//       spaceBetween: 50,
+//     },
+//   },
+
+//   navigation: {
+//     nextEl: ".swiper-button-next-2",
+//     prevEl: ".swiper-button-prev-2",
+//   },
+// });
+
+// console.log(workSwiper);
