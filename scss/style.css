@@ -594,23 +594,24 @@ section {
 }
 .work .mySwiper2 {
   width: 90%;
-  height: 250px;
-  background-color: red;
+  height: 300px;
 }
 .work .mySwiper {
   height: 30%;
-  box-sizing: border-box;
-  border: 1px solid black;
   padding: 0.5em 0;
 }
 .work .mySwiper .swiper-slide {
-  opacity: 0.4;
+  opacity: 0.3;
 }
 .work .swiper-slide {
   background-position: center;
   display: flex !important;
   align-items: center;
   justify-content: center;
+}
+.work .swiper-slide > img {
+  width: 100%;
+  height: 100%;
 }
 .work .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
