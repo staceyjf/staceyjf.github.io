@@ -30,6 +30,7 @@ main {
 section {
   // height: 100%;
   //new
+  border: red solid 1px;
   height: calc(100vh - 50px);
   row-gap: 0.5em;
 }

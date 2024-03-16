@@ -11,3 +11,19 @@ function mobileNavigation() {
     bodyWrapper.classList.remove("menu-open");
   }
 }
+
+document.addEventListener("DOMContentLoaded", (event) => {
+  console.log("DOM fully loaded and parsed");
+  let swiper = new Swiper(".swiper", {
+    direction: "horizontal",
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 10,
+    // mousewheel: true,
+  });
+  console.log(swiper);
+});

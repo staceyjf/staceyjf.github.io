@@ -3,7 +3,6 @@
 @use "../_partials/queries";
 
 .more {
-  overflow: auto; //scrolls if overflow
   @include n.grid-12;
 
   &__title {
