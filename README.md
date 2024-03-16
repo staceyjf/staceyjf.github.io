@@ -10,7 +10,7 @@ This web-based application serves as a showcase for the exciting projects I am c
 
 <div align="center">
 
-  <img src="./assets/images/desktop-homepage.png" alt="Homepage Screenshot">
+  <img src="./assets/images/desktop-homepage.png" alt="Homepage Screenshot" style="border: 1px solid black ">
 
 </div>
  
