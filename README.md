@@ -1,4 +1,6 @@
-# Welcome to my portfolio - come and look at what I've been up to
+# Welcome to my portfolio!
+
+This web-based application serves as a showcase for the exciting projects I am currently working on.
 
 <!-- <div align="center">
 
@@ -17,11 +19,13 @@ To see the deployed site: https://portfolio.staceyfanner.com
 
 ## About the Web App
 
-Welcome to my portfolio! This web-based application serves as a showcase for the exciting projects I am currently working on.
+Built with vanilla HTML, CSS, and JS, it was a good opportunity to get back to the fundamentals.
 
-Built with vanilla HTML, CSS, and JS, it was a good opportunity to get back to the fundamentals. It serves as a first draft which I plan to iterate on throughout the next couple of months as my skills expand through the nology course that I am currently embarked on.
+It serves as a first draft which I plan to iterate on throughout the next couple of months as my skills expand through the nology course that I am currently embarked on.
 
-## User stories
+## Planning
+
+### User stories
 
 - I want to be welcomed by a intro splash page which includes a name and title
 - I want to learn more about stacey fanner
@@ -29,7 +33,7 @@ Built with vanilla HTML, CSS, and JS, it was a good opportunity to get back to t
 - I want to explore her key projects
 - I want to be able to make contact via a range of methods
 
-## Planning artifacts
+### Planning artifacts
 
 1. [Figma wireframe](<https://www.figma.com/file/5TgUXIooWHFEpJBoSCQFDr/Portfolio---Web-%26-Mobile-(nology)?type=design&node-id=0%3A1&mode=design&t=woVCtkQQ5AKWk7Y6-1>)
 
@@ -37,7 +41,7 @@ Built with vanilla HTML, CSS, and JS, it was a good opportunity to get back to t
  <img src="./assets/images/figma.png" title="Figma wireframe" width="500" height="300">
  </div>
 
-2. [Kaban project board](https://github.com/users/staceyjf/projects/6/views/2)
+2. [Kanban project board](https://github.com/users/staceyjf/projects/6/views/2)
 
 <div align="center">
  <img src="./assets/images/project-board.png" title="Github Project board" width="500" height="300">
