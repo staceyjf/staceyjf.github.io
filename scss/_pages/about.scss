@@ -16,19 +16,6 @@
     grid-column: 1 / span 12;
     grid-row: 3;
     align-self: center;
-    &.swiper {
-      width: 300px;
-      height: 300px;
-    }
-  }
-
-  .swiper-button {
-    &-prev {
-      color: bv.$secondary-color;
-    }
-    &-next {
-      color: bv.$primary-color;
-    }
   }
 
   &__option {
@@ -38,26 +25,31 @@
     }
 
     &__li {
-      // margin: 0;
       font-weight: 700;
     }
 
     &-item {
-      background-color: bv.$light-color;
-      // display: flex;
-      // height: 200px;
-      // width: 100%;
+      background-color: bv.$dark-color;
+      color: #fff;
       text-align: center;
+    }
+  }
 
-      &--1 {
-        // grid-row: 4 / span 5;
+  //--phone media query---
+  @include queries.phone {
+    &__wrapper {
+      &.swiper {
+        width: 80%;
+        height: 80%;
       }
-      &--2 {
-        background-color: bv.$dark-color;
-        color: #fff;
+    }
+
+    .swiper-button {
+      &-prev {
+        color: bv.$secondary-color;
       }
-      &--3 {
-        // margin-bottom: 1em;
+      &-next {
+        color: bv.$primary-color;
       }
     }
   }
@@ -74,22 +66,30 @@
         height: 400px;
       }
     }
+
+    .swiper-button {
+      &-prev {
+        color: bv.$secondary-color;
+      }
+      &-next {
+        color: bv.$primary-color;
+      }
+    }
   }
 
   //--desktop media query---
   @include queries.desktop {
-    grid-template-rows: repeat(12, 1fr);
-    &__title {
-      grid-row: 2;
-      font-size: 5em;
+    &__wrapper {
+      grid-column: 2 / span 10;
+
+      &.swiper {
+        width: 100%;
+        height: 250px;
+      }
     }
 
-    &__wrapper {
-      display: flex;
-      flex-direction: row;
-      grid-column: 3 / span 8;
-      grid-row: 5 / span 5;
-      column-gap: 20px;
+    &__option-item--grey {
+      background-color: bv.$secondary-color;
     }
   }
 }

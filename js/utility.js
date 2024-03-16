@@ -12,6 +12,7 @@ function mobileNavigation() {
   }
 }
 
+// swiper.js initalizer taking from the docs
 document.addEventListener("DOMContentLoaded", (event) => {
   console.log("DOM fully loaded and parsed");
   let swiper = new Swiper(".swiper", {
@@ -23,7 +24,12 @@ document.addEventListener("DOMContentLoaded", (event) => {
     },
     slidesPerView: 1,
     spaceBetween: 10,
-    // mousewheel: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 50,
+      },
+    },
   });
   console.log(swiper);
 });
