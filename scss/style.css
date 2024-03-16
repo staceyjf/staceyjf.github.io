@@ -681,44 +681,29 @@ section {
 }
 @media only screen and (min-width: 500px) {
   .more {
-    grid-template-rows: 1fr 0.25fr repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(3, 1fr);
+    grid-template-rows: repeat(12, 1fr);
   }
   .more__title {
-    align-content: center;
+    grid-row: 2;
     font-size: 2.75em;
-  }
-  .more__option-item {
-    margin-bottom: 0em;
+    align-self: flex-start;
   }
   .more__option-item--1 {
-    grid-row: 3/span 2;
+    grid-row: 4;
   }
   .more__option-item--2 {
-    grid-row: 6/span 2;
+    grid-row: 6;
   }
   .more__option-item--3 {
-    grid-row: 9/span 2;
+    grid-row: 8;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .more {
-    grid-template-rows: repeat(2, 1fr) 0.25fr repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(3, 1fr);
-  }
   .more__title {
     font-size: 5em;
-    grid-row: 2;
   }
   .more__option-h4 {
     font-size: 2em;
-  }
-  .more__option-item--1 {
-    grid-row: 4/span 2;
-  }
-  .more__option-item--2 {
-    grid-row: 7/span 2;
-  }
-  .more__option-item--3 {
-    grid-row: 10/span 2;
   }
 }
 

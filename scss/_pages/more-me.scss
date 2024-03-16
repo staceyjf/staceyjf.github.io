@@ -39,28 +39,25 @@
 
   //--tablet media query---
   @include queries.large-phone {
-    grid-template-rows: 1fr 0.25fr repeat(2, 1fr) 0.5fr repeat(2, 1fr) 0.5fr repeat(
-        3,
-        1fr
-      );
+    grid-template-rows: repeat(12, 1fr);
+    // row-gap: 6em;
 
     &__title {
-      align-content: center;
-      // grid-row: 1;
+      grid-row: 2;
       font-size: 2.75em;
+      align-self: flex-start;
     }
 
     &__option {
       &-item {
-        margin-bottom: 0em;
         &--1 {
-          grid-row: 3 / span 2;
+          grid-row: 4;
         }
         &--2 {
-          grid-row: 6 / span 2;
+          grid-row: 6;
         }
         &--3 {
-          grid-row: 9 / span 2;
+          grid-row: 8;
         }
       }
     }
@@ -68,30 +65,13 @@
 
   //--desktop media query---
   @include queries.desktop {
-    grid-template-rows:
-      repeat(2, 1fr) 0.25fr repeat(2, 1fr) 0.5fr repeat(2, 1fr)
-      0.5fr repeat(3, 1fr);
-
     &__title {
       font-size: 5em;
-
-      grid-row: 2;
     }
 
     &__option {
       &-h4 {
         font-size: 2em;
-      }
-      &-item {
-        &--1 {
-          grid-row: 4 / span 2;
-        }
-        &--2 {
-          grid-row: 7 / span 2;
-        }
-        &--3 {
-          grid-row: 10 / span 2;
-        }
       }
     }
   }
