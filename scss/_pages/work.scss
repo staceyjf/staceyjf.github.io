@@ -4,7 +4,7 @@
 
 .work {
   @include n.grid-12;
-  grid-template-rows: 0.1em auto 1fr 0.25fr;
+  grid-template-rows: auto auto 1fr;
 
   &__title {
     grid-column: 2 / span 11;
@@ -15,7 +15,7 @@
   &__wrapper {
     grid-column: 1 / span 12;
     grid-row: 3;
-    align-self: center;
+    // align-self: center;
   }
 
   .swiper {
@@ -28,7 +28,7 @@
   }
 
   .mySwiper {
-    height: 30%;
+    // height: 30%;
     padding: 0.5em 0;
   }
 
@@ -69,19 +69,35 @@
     }
 
     .swiper {
-      width: 380px;
+      width: 300px;
     }
 
     .mySwiper2 {
-      width: 380px;
-      height: 380px;
+      width: 300px;
+      height: 300px;
     }
   }
 
   //--desktop media query---
   @include queries.desktop {
+    grid-template-rows: auto 1fr;
     &__title {
+      grid-row: 1;
       font-size: 5em;
+      margin: 0;
+    }
+
+    &__wrapper {
+      grid-row: 2;
+    }
+
+    .swiper {
+      width: 500px;
+    }
+
+    .mySwiper2 {
+      width: 800px;
+      height: 400px;
     }
   }
 }
