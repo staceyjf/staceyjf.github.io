@@ -1,0 +1,14 @@
+@use "../_partials/site-normalisation" as n;
+@use "../_partials/brand-variables" as bv;
+@use "../_partials/queries";
+
+.work {
+  @include n.grid-12-12;
+
+  &__title {
+    grid-column: 2 / span 10;
+    grid-row: 2;
+    margin: 0;
+    font-size: 1.8em;
+  }
+}
