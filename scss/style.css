@@ -587,19 +587,21 @@ section {
 .work__wrapper {
   grid-column: 1/span 12;
   grid-row: 3;
+  align-self: center;
 }
 .work .swiper {
-  width: 240px;
+  width: 90%;
 }
 .work .mySwiper2 {
-  width: 240px;
-  height: 160px;
+  width: 90%;
+  height: 250px;
   background-color: red;
 }
 .work .mySwiper {
   height: 30%;
   box-sizing: border-box;
-  margin: 10px;
+  border: 1px solid black;
+  padding: 0.5em 0;
 }
 .work .mySwiper .swiper-slide {
   opacity: 0.4;

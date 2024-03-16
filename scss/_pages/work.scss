@@ -15,24 +15,24 @@
   &__wrapper {
     grid-column: 1 / span 12;
     grid-row: 3;
+    align-self: center;
   }
 
-  .swiper-container {
-  }
   .swiper {
-    width: 240px;
+    width: 90%;
   }
 
   .mySwiper2 {
-    width: 240px;
-    height: 160px;
+    width: 90%;
+    height: 250px;
     background-color: red;
   }
 
   .mySwiper {
     height: 30%;
     box-sizing: border-box;
-    margin: 10px;
+    border: 1px solid black;
+    padding: 0.5em 0;
   }
 
   .mySwiper .swiper-slide {
