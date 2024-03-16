@@ -57,16 +57,16 @@
 
   //--tablet media query---
   @include queries.large-phone {
+    grid-template-rows: auto auto 1fr 0.25fr;
     &__title {
       font-size: 2.75em;
       align-content: center;
-      grid-row: 1;
     }
 
     &__wrapper {
       &.swiper {
-        width: 400px;
-        height: 400px;
+        width: 80%;
+        height: 80%;
       }
     }
 

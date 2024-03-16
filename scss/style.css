@@ -539,14 +539,16 @@ section {
   }
 }
 @media only screen and (min-width: 500px) {
+  .snapshot {
+    grid-template-rows: auto auto 1fr 0.25fr;
+  }
   .snapshot__title {
     font-size: 2.75em;
     align-content: center;
-    grid-row: 1;
   }
   .snapshot__wrapper.swiper {
-    width: 400px;
-    height: 400px;
+    width: 80%;
+    height: 80%;
   }
   .snapshot .swiper-button-prev {
     color: #bfbbbd;
@@ -627,7 +629,6 @@ section {
   }
   .more__title {
     align-content: center;
-    grid-row: 1;
     font-size: 2.75em;
   }
   .more__option-item {

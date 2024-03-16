@@ -27,32 +27,29 @@ function addActiveClass(link) {
   link.classList.add("top-nav__link--active");
 }
 
-// Add click event listener to all nav links
-navLinks.forEach(function (link) {
-  link.addEventListener("click", function () {
+// Add click event listener to all nav links to add or remove a class based on a click event to the top-nav which was clicked on
+navLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
     removeActiveClass();
-    addActiveClass(this);
+    addActiveClass(event.currentTarget);
   });
 });
 
 // swiper.js initalizer taking from the docs
-document.addEventListener("DOMContentLoaded", (event) => {
-  console.log("DOM fully loaded and parsed");
-  let swiper = new Swiper(".swiper", {
-    direction: "horizontal",
-    loop: true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+const swiper = new Swiper(".swiper", {
+  direction: "horizontal",
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    1200: {
+      slidesPerView: 3,
+      spaceBetween: 50,
     },
-    slidesPerView: 1,
-    spaceBetween: 10,
-    breakpoints: {
-      1200: {
-        slidesPerView: 3,
-        spaceBetween: 50,
-      },
-    },
-  });
-  console.log(swiper);
+  },
 });
+console.log(swiper);
