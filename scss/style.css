@@ -513,6 +513,16 @@ section {
   grid-row: 3;
   align-self: center;
 }
+.snapshot__wrapper.swiper {
+  width: 300px;
+  height: 300px;
+}
+.snapshot .swiper-button-prev {
+  color: #bfbbbd;
+}
+.snapshot .swiper-button-next {
+  color: #953297;
+}
 .snapshot__option__ul {
   list-style: none;
   padding: 0;
@@ -528,30 +538,13 @@ section {
   background-color: #191919;
   color: #fff;
 }
-@media only screen and (min-width: 0) and (max-width: 499px) {
-  .snapshot .snapshot__wrapper.swiper {
-    width: 300px;
-    height: 300px;
-  }
-  .snapshot .swiper-button-prev {
-    color: #bfbbbd;
-  }
-  .snapshot .swiper-button-next {
-    color: #953297;
-  }
-}
 @media only screen and (min-width: 500px) {
   .snapshot__title {
-    grid-row: 3;
     font-size: 2.75em;
   }
-  .snapshot__wrapper {
-    grid-column: 4/span 6;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
-    row-gap: 1em;
+  .snapshot__wrapper.swiper {
+    width: 400px;
+    height: 400px;
   }
 }
 @media only screen and (min-width: 1200px) {
