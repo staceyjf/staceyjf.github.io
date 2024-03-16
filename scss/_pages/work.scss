@@ -15,19 +15,39 @@
   &__wrapper {
     grid-column: 1 / span 12;
     grid-row: 3;
-    // align-self: center;
+  }
 
-    &.swiper-container {
-      background-color: red;
-    }
+  .swiper-container {
+  }
+  .swiper {
+    width: 240px;
+  }
 
-    &.swiper {
-      // width: 80%;
-      // height: 80%;
-      width: 300px;
-      height: 300px;
-      padding: 50px;
-    }
+  .mySwiper2 {
+    width: 240px;
+    height: 160px;
+    background-color: red;
+  }
+
+  .mySwiper {
+    height: 30%;
+    box-sizing: border-box;
+    margin: 10px;
+  }
+
+  .mySwiper .swiper-slide {
+    opacity: 0.4;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
   }
 
   .swiper-button {

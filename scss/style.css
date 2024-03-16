@@ -588,13 +588,30 @@ section {
   grid-column: 1/span 12;
   grid-row: 3;
 }
-.work__wrapper.swiper-container {
+.work .swiper {
+  width: 240px;
+}
+.work .mySwiper2 {
+  width: 240px;
+  height: 160px;
   background-color: red;
 }
-.work__wrapper.swiper {
-  width: 300px;
-  height: 300px;
-  padding: 50px;
+.work .mySwiper {
+  height: 30%;
+  box-sizing: border-box;
+  margin: 10px;
+}
+.work .mySwiper .swiper-slide {
+  opacity: 0.4;
+}
+.work .swiper-slide {
+  background-position: center;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.work .mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
 }
 .work .swiper-button-prev-2 {
   color: #bfbbbd;

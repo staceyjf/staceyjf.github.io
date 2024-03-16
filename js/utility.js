@@ -53,43 +53,22 @@ const snapshotSwiper = new Swiper("#snapshotSwiper", {
     },
   },
 });
-console.log(snapshotSwiper);
 
 // swiper.js initalizer for #work-section
-const workSwiper = new Swiper("#workSwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 40,
-  centeredSlides: true,
-  grabcursor: true,
-  loop: true,
-  preloadImages: true,
+const workSwiperThumb = new Swiper("#workSwiperThumbnail", {
+  spaceBetween: 10,
+  slidesPerView: 4,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
 
-  breakpoints: {
-    300: {
-      slidesPerView: 1.5,
-      spaceBetween: 15,
-    },
-
-    768: {
-      slidesPerView: 3,
-      spaceBetween: 20,
-    },
-
-    1280: {
-      slidesPerView: 4,
-      spaceBetween: 30,
-    },
-
-    1920: {
-      slidesPerView: 5,
-      spaceBetween: 50,
-    },
-  },
-
+const workSwiperMain = new Swiper("#workSwiperMain", {
+  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next-1",
     prevEl: ".swiper-button-prev-1",
   },
+  thumbs: {
+    swiper: workSwiperThumb,
+  },
 });
-
-console.log(workSwiper);
