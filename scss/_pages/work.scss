@@ -17,7 +17,6 @@
   &__wrapper {
     grid-column: 1 / span 12;
     grid-row: 2;
-    // align-self: center;
   }
 
   .swiper {
@@ -31,6 +30,8 @@
 
   .slide-label {
     padding: 0.5em;
+    margin: 0;
+    width: 100%;
   }
 
   .slide-label > span {
