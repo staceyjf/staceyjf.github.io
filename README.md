@@ -49,15 +49,18 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 
 ## Key learning highlights
 
-1. Exploring the using 12-column grid design
+1. Exploring CSS grid
 2. Utilized Sass and BEM naming conventions to structure my CSS
 3. Integrated Polypane into my process to streamline the design across media queries
 
-## Icebox
+## Challenges
 
-1. Look at alternative hosting options to Github pages
-2. Explore different features of swipe.js to demonstrate my portfolio work
-3. Add logos to About me section
+1. Designing responsively - balancing where to use Grid vs Flexbox
+
+## TO-Dos
+
+1. Add logos to About me section
+2. Revise the grid structure to 4-8-12 across media queries for better responsive design
 
 ## Screengrabs
 
