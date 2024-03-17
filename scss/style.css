@@ -390,7 +390,7 @@ section {
   row-gap: 0.5em;
 }
 
-.btn, .splash__btn {
+.btn, .work__btn, .splash__btn {
   max-height: 50px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -401,11 +401,14 @@ section {
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition-duration: 0.15s;
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover, .splash__btn:hover {
+.btn:hover, .work__btn:hover, .splash__btn:hover {
   color: #fff;
   background: #191919;
 }
@@ -448,10 +451,8 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 1em;
   grid-row: 5;
   grid-column: 1/span 12;
-  justify-content: center;
 }
 .splash__btn {
   text-decoration: none;
@@ -553,8 +554,8 @@ section {
     height: 100%;
   }
   .snapshot .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #953297;
   }
 }
@@ -581,7 +582,6 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 1fr;
-  row-gap: 1em;
 }
 .work__title {
   grid-column: 2/span 11;
@@ -601,7 +601,7 @@ section {
   height: min-content;
 }
 .work .mySwiper {
-  width: 30%;
+  width: 35%;
 }
 .work .slide-label {
   padding: 0.5em;
@@ -619,6 +619,21 @@ section {
 }
 .work .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
+}
+.work__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  column-gap: 1em;
+}
+.work__btn {
+  text-decoration: none;
+  width: 10%;
+}
+.work__btn--grey {
+  background: #bfbbbd;
 }
 @media only screen and (min-width: 500px) {
   .work__title {
@@ -638,15 +653,14 @@ section {
   }
   .work .mySwiper2 {
     max-width: 1000px;
-    height: 500px;
+    height: 600px;
   }
   .work .mySwiper {
     width: 15%;
   }
   .work .swiper-slide > img {
     width: 100%;
-    height: 85%;
-    padding-left: 1em;
+    max-height: 450px;
   }
 }
 
