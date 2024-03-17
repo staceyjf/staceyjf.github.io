@@ -316,6 +316,7 @@ template {
   position: fixed;
   width: 100%;
   top: 0;
+  padding-right: 5px;
 }
 .top-nav .top-nav__wrapper {
   display: flex;
@@ -390,7 +391,7 @@ section {
   row-gap: 0.5em;
 }
 
-.btn, .work__btn, .splash__btn {
+.btn, .more__btn, .work__btn, .splash__btn {
   max-height: 50px;
   cursor: pointer;
   border: 2px solid transparent;
@@ -408,7 +409,7 @@ section {
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.btn:hover, .work__btn:hover, .splash__btn:hover {
+.btn:hover, .more__btn:hover, .work__btn:hover, .splash__btn:hover {
   color: #fff;
   background: #191919;
 }
@@ -693,6 +694,21 @@ section {
 }
 .more__option-h4 {
   margin: 0 0 0.25em 0;
+}
+.more__option-h4 > span {
+  color: #953297;
+}
+.more__btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1/span 12;
+  grid-row: 12;
+}
+.more__btn {
+  text-decoration: none;
+  align-self: flex-start;
+  margin: 2em 0;
 }
 @media only screen and (min-width: 500px) {
   .more {
