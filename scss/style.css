@@ -385,7 +385,7 @@ main {
 }
 
 section {
-  height: 100vh;
+  height: calc(100vh - 50px);
   padding-top: 50px;
   row-gap: 0.5em;
 }
@@ -500,8 +500,7 @@ section {
 .snapshot {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: auto 1fr;
-  row-gap: 2em;
+  grid-template-rows: 0.05fr 1fr;
 }
 .snapshot__title {
   grid-column: 2/span 11;
@@ -519,50 +518,59 @@ section {
 .snapshot__option__li {
   font-weight: 700;
   line-height: 1.5;
+  font-size: 1.5em;
 }
 .snapshot__option-item {
   background-color: #191919;
   color: #fff;
   text-align: center;
+  padding-top: 1em;
+}
+.snapshot .swiper-slide {
+  display: flex;
+  flex-direction: column;
 }
 @media only screen and (min-width: 0) and (max-width: 499px) {
   .snapshot__wrapper.swiper {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
-  .snapshot .swiper-button-prev {
-    color: #bfbbbd;
-  }
-  .snapshot .swiper-button-next {
-    color: #953297;
+  .snapshot .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    background-color: #953297;
   }
 }
 @media only screen and (min-width: 500px) {
   .snapshot__title {
     font-size: 2.75em;
-    align-content: center;
+  }
+  .snapshot__option__li {
+    font-size: 2em;
   }
   .snapshot__wrapper.swiper {
-    width: 80%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
   }
-  .snapshot .swiper-button-prev {
-    color: #bfbbbd;
-  }
-  .snapshot .swiper-button-next {
-    color: #953297;
+  .snapshot .swiper-pagination-bullet {
+    width: 30px;
+    height: 30px;
+    background-color: #953297;
   }
 }
 @media only screen and (min-width: 1200px) {
   .snapshot__title {
     font-size: 5em;
   }
+  .snapshot__option__li {
+    font-size: 1.25em;
+  }
   .snapshot__wrapper {
     grid-column: 2/span 10;
   }
   .snapshot__wrapper.swiper {
     width: 100%;
-    height: 250px;
+    height: 350px;
   }
   .snapshot__option-item--grey {
     background-color: #bfbbbd;
