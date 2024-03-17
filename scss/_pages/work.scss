@@ -97,7 +97,7 @@
 
     .mySwiper2 {
       max-width: 1000px;
-      height: 500px;
+      height: 600px;
     }
 
     .mySwiper {
@@ -106,8 +106,7 @@
 
     .swiper-slide > img {
       width: 100%;
-      height: 85%;
-      padding-left: 1em;
+      max-height: 450px;
     }
   }
 }

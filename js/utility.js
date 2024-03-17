@@ -38,11 +38,6 @@ navLinks.forEach((link) => {
 // swiper.js initalizer taking from the docs for #snapshot-section
 const snapshotSwiper = new Swiper("#snapshotSwiper", {
   direction: "horizontal",
-  // loop: true,
-  // navigation: {
-  //   nextEl: ".swiper-button-next",
-  //   prevEl: ".swiper-button-prev",
-  // },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
