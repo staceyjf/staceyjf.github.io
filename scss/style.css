@@ -554,8 +554,8 @@ section {
     height: 100%;
   }
   .snapshot .swiper-pagination-bullet {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #953297;
   }
 }
@@ -624,12 +624,16 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 1em;
+  column-gap: 1em;
 }
 .work__btn {
   text-decoration: none;
   width: 10%;
+}
+.work__btn--grey {
+  background: #bfbbbd;
 }
 @media only screen and (min-width: 500px) {
   .work__title {

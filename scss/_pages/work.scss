@@ -58,14 +58,19 @@
 
   &__btn-wrapper {
     @include btn.btn__wrapper;
-    justify-content: space-evenly;
+    justify-content: center;
     margin-top: 1em;
+    column-gap: 1em;
   }
 
   &__btn {
     @extend btn, .btn !optional;
     text-decoration: none;
     width: 10%;
+
+    &--grey {
+      background: bv.$secondary-color;
+    }
   }
 
   //--tablet media query---
