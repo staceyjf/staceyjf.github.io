@@ -528,6 +528,10 @@ section {
   text-align: center;
   padding-top: 1em;
 }
+.snapshot__option-item--grey {
+  background-color: #c2e812;
+  color: #191919;
+}
 .snapshot .swiper-slide {
   display: flex;
   flex-direction: column;
@@ -635,6 +639,7 @@ section {
 }
 .work__btn--grey {
   background: #c2e812;
+  color: #191919;
 }
 @media only screen and (min-width: 500px) {
   .work__title {
