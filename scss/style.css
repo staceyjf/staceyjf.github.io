@@ -589,11 +589,18 @@ section {
   max-width: 320px;
 }
 .work .mySwiper2 {
-  width: 100%;
+  width: 90%;
   min-height: min-content;
 }
 .work .slide-label {
   padding: 0.5em;
+}
+.work .slide-label > span {
+  font-weight: 700;
+  display: block;
+}
+.work .mySwiper {
+  width: 90%;
 }
 .work .mySwiper .swiper-slide {
   opacity: 0.3;
