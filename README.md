@@ -57,10 +57,12 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 
 1. Designing responsively - balancing where to use Grid vs Flexbox
 
-## TO-Dos
+## To-Dos
 
-1. Add logos to About me section
+1. Add logos to 'About me' section for tech
 2. Revise the grid structure to 4-8-12 across media queries for better responsive design
+3. Streamline overlapping CSS for grid design and font
+4. Increase position of top-nav so content scrolls underneath it
 
 ## Screengrabs
 
