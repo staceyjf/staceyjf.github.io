@@ -4,8 +4,8 @@
 
 .snapshot {
   @include n.grid-12;
-  grid-template-rows: auto 1fr;
-  row-gap: 2em;
+  grid-template-rows: 0.05fr 1fr;
+  // row-gap: 0.2em;
 
   &__title {
     grid-column: 2 / span 11;
@@ -27,31 +27,35 @@
     &__li {
       font-weight: 700;
       line-height: 1.5;
+      font-size: 1.5em;
     }
 
     &-item {
       background-color: bv.$dark-color;
       color: #fff;
       text-align: center;
+      padding-top: 1em;
     }
+  }
+
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
   }
 
   //--phone media query---
   @include queries.phone {
     &__wrapper {
       &.swiper {
-        width: 80%;
-        height: 60%;
+        width: 100%;
+        height: 100%;
       }
     }
 
-    .swiper-button {
-      &-prev {
-        color: bv.$secondary-color;
-      }
-      &-next {
-        color: bv.$primary-color;
-      }
+    .swiper-pagination-bullet {
+      width: 30px;
+      height: 30px;
+      background-color: bv.$primary-color;
     }
   }
 
@@ -59,23 +63,25 @@
   @include queries.large-phone {
     &__title {
       font-size: 2.75em;
-      align-content: center;
+    }
+
+    &__option {
+      &__li {
+        font-size: 2em;
+      }
     }
 
     &__wrapper {
       &.swiper {
-        width: 80%;
-        height: 60%;
+        width: 100%;
+        height: 100%;
       }
     }
 
-    .swiper-button {
-      &-prev {
-        color: bv.$secondary-color;
-      }
-      &-next {
-        color: bv.$primary-color;
-      }
+    .swiper-pagination-bullet {
+      width: 30px;
+      height: 30px;
+      background-color: bv.$primary-color;
     }
   }
 
@@ -85,12 +91,18 @@
       font-size: 5em;
     }
 
+    &__option {
+      &__li {
+        font-size: 1.25em;
+      }
+    }
+
     &__wrapper {
       grid-column: 2 / span 10;
 
       &.swiper {
         width: 100%;
-        height: 250px;
+        height: 350px;
       }
     }
 
