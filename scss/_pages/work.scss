@@ -5,7 +5,7 @@
 .work {
   @include n.grid-12;
   grid-template-rows: auto 1fr;
-  row-gap: 1em;
+  row-gap: 3.5em;
 
   &__title {
     grid-column: 2 / span 11;

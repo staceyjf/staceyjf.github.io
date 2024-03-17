@@ -67,6 +67,7 @@ const workSwiperThumb = new Swiper("#workSwiperThumbnail", {
 });
 
 const workSwiperMain = new Swiper("#workSwiperMain", {
+  spaceBetween: 10,
   navigation: {
     nextEl: ".swiper-button-next-1",
     prevEl: ".swiper-button-prev-1",

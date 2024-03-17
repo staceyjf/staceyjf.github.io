@@ -581,7 +581,7 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 1fr;
-  row-gap: 1em;
+  row-gap: 3.5em;
 }
 .work__title {
   grid-column: 2/span 11;
