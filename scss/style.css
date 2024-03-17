@@ -573,39 +573,40 @@ section {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto 1fr;
-  row-gap: 2em;
+  row-gap: 1em;
 }
 .work__title {
   grid-column: 2/span 11;
   grid-row: 1;
   font-size: 1.5em;
+  margin: 0.35em 0 0 0;
 }
 .work__wrapper {
   grid-column: 1/span 12;
   grid-row: 2;
 }
 .work .swiper {
-  width: 250px;
+  max-width: 320px;
 }
 .work .mySwiper2 {
-  width: 250px;
-  height: 250px;
+  width: 100%;
+  min-height: min-content;
 }
-.work .mySwiper {
-  padding: 0.5em 0;
+.work .slide-label {
+  padding: 0.5em;
 }
 .work .mySwiper .swiper-slide {
   opacity: 0.3;
 }
 .work .swiper-slide {
   background-position: center;
-  display: flex !important;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 .work .swiper-slide > img {
   width: 100%;
-  height: 100%;
 }
 .work .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
@@ -621,11 +622,7 @@ section {
     font-size: 2.75em;
   }
   .work .swiper {
-    width: 300px;
-  }
-  .work .mySwiper2 {
-    width: 300px;
-    height: 300px;
+    max-width: 90%;
   }
 }
 @media only screen and (min-width: 1200px) {
