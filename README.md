@@ -56,8 +56,8 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 ## Icebox
 
 1. Look at alternative hosting options to Github pages
-2. Additional user story:
-   - I want the section elements to load when I scroll to the relevant ones
+2. Explore different features of swipe.js to demonstrate my portfolio work
+3. Add logos to About me section
 
 ## Screengrabs
 
@@ -78,6 +78,7 @@ Contact page across differing screen sizes
 ![Sass](https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 ![Polypane](https://img.shields.io/badge/-Polypane-05122A?style=flat&logo=polypane)
+![Swiper.js](https://img.shields.io/badge/-SwiperJS-05122A?style=flat&logo=swiperJS)
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 
