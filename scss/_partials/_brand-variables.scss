@@ -1,15 +1,17 @@
 @use "./queries";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
 
-$primary-color: #953297;
-$secondary-color: #bfbbbd;
+$primary-color: #d30c7b;
+$secondary-color: #c2e812;
 $dark-color: #191919;
-$light-color: #dbd7d9;
+$light-color: #e9ecea;
 
 $font: "Heebo", sans-serif;
 
 @mixin font-stack {
   font-family: $font;
+
+  // TO DO: standardised the font across the different pages
   // h1 {
   //   font-size: 2.14em;
   // }

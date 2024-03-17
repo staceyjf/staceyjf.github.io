@@ -329,13 +329,13 @@ template {
   color: #191919;
 }
 .top-nav a.top-nav__link--active {
-  color: #953297;
+  color: #d30c7b;
 }
 .top-nav a.top-nav__icon {
   display: none;
 }
 .top-nav a:hover {
-  background-color: #bfbbbd;
+  background-color: #c2e812;
 }
 @media only screen and (min-width: 0) and (max-width: 499px) {
   .top-nav .top-nav__wrapper {
@@ -398,7 +398,7 @@ section {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   border-radius: 10px;
   color: #fff;
-  background: #953297;
+  background: #d30c7b;
   font-weight: 600;
   padding: 12px 20px;
   text-align: center;
@@ -439,7 +439,7 @@ section {
   margin: 0;
 }
 .splash__title span {
-  color: #953297;
+  color: #d30c7b;
 }
 .splash__h3 {
   text-align: center;
@@ -540,7 +540,7 @@ section {
   .snapshot .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
-    background-color: #953297;
+    background-color: #d30c7b;
   }
 }
 @media only screen and (min-width: 500px) {
@@ -557,7 +557,7 @@ section {
   .snapshot .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
-    background-color: #953297;
+    background-color: #d30c7b;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -575,7 +575,7 @@ section {
     height: 350px;
   }
   .snapshot__option-item--grey {
-    background-color: #bfbbbd;
+    background-color: #c2e812;
   }
 }
 
@@ -634,7 +634,7 @@ section {
   width: 10%;
 }
 .work__btn--grey {
-  background: #bfbbbd;
+  background: #c2e812;
 }
 @media only screen and (min-width: 500px) {
   .work__title {
@@ -696,7 +696,7 @@ section {
   margin: 0 0 0.25em 0;
 }
 .more__option-h4 > span {
-  color: #953297;
+  color: #c2e812;
 }
 .more__btn-wrapper {
   display: flex;
@@ -864,7 +864,7 @@ a {
   color: #191919;
 }
 a:hover {
-  color: #953297;
+  color: #d30c7b;
 }
 
 .grid-12-12 {
