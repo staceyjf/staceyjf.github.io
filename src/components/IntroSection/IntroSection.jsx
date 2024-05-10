@@ -7,11 +7,6 @@ import styles from "./IntroSection.module.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function IntroSection() {
-  // download CV functionality via browser's window (window interface)
-  const onClickCV = () => {
-    window.open(personalData.cvPdf, "_blank");
-  };
-
   return (
     <div className={styles.landing}>
       <div className={styles.landing_container}>
@@ -45,9 +40,16 @@ function IntroSection() {
               consequatur quasi recusandae inventore.
             </p>
 
-            <div
-              className={styles.landing_container_right_buttonContainer}
-            ></div>
+            <div className={styles.landing_container_right_buttonContainer}>
+              <a
+                href={personalData.cvPdf}
+                download="resume"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button buttonText="Download CV" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -56,3 +58,5 @@ function IntroSection() {
 }
 
 export default IntroSection;
+
+//https://github.com/sreerag-rajan/developer-portfolio/blob/main/src/components/Landing/Landing.js

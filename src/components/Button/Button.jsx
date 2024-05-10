@@ -1,14 +1,8 @@
 import styles from "./Button.module.scss";
 
-// default onClick to avoid issues where no CB is provided
-function Button({ stylename, onClickCB = () => {}, buttonText, SvgIcon }) {
-  let stylingClasses = styles.button;
-
-  // add additional css as props
-  if (stylename) stylingClasses += ` ${styles[stylename]}`;
-
+function Button({ buttonText, SvgIcon }) {
   return (
-    <button onClick={onClickCB} className={stylingClasses}>
+    <button className={styles.button}>
       {SvgIcon && <SvgIcon />}
       {buttonText}
     </button>
