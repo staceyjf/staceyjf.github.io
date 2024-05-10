@@ -23,5 +23,3 @@ function MainPage() {
 }
 
 export default MainPage;
-
-//https://github.com/sreerag-rajan/developer-portfolio/blob/main/src/components/Landing/Landing.js

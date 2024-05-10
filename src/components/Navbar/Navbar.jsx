@@ -11,11 +11,14 @@ function Navbar() {
   const [isMobile, setIsMobile] = useState(true);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
 
+  // custom hook to detect screensize which then switches between hamburger menu
+  // full  menu
   const detectMobileOrTablet = () => {
     if (screenSize.width < 600) setIsMobile(true);
     else setIsMobile(false);
   };
 
+  //
   const linkStyles = ({ isActive }) => {
     return isActive ? `${styles.link} ${styles.link_active}` : `${styles.link}`;
   };

@@ -5,5 +5,37 @@
 *,
 *::before,
 *::after {
+  margin: 0;
   box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* scrollBar */
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: bv.$dark-color;
+}
+::-webkit-scrollbar-thumb {
+  background: bv.$dark-color;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+@include q.phone {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+  body {
+    overflow-x: hidden;
+  }
 }

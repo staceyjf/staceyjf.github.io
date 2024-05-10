@@ -4,15 +4,9 @@ This web-based application serves as a showcase for the exciting projects I am c
 
 <!-- <div align="center">
 
-  <img src="./assets/images/mobile-homepage.png" alt="Homepage Screenshot">
-
-</div> -->
-
-<div align="center">
-
   <img src="./assets/images/desktop-homepage.png" alt="Homepage Screenshot" style="border: 1px solid black ">
 
-</div>
+</div> -->
  
  <br>
 To see the deployed site: https://portfolio.staceyfanner.com
@@ -38,13 +32,13 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 1. [Figma wireframe](<https://www.figma.com/file/5TgUXIooWHFEpJBoSCQFDr/Portfolio---Web-%26-Mobile-(nology)?type=design&node-id=0%3A1&mode=design&t=woVCtkQQ5AKWk7Y6-1>)
 
 <div align="center">
- <img src="./assets/images/figma.png" title="Figma wireframe" width="500" height="300">
+ <img src="./public/images/figma.png" title="Figma wireframe" width="500" height="300">
  </div>
 
 2. [Kanban project board](https://github.com/users/staceyjf/projects/6/views/2)
 
 <div align="center">
- <img src="./assets/images/project-board.png" title="Github Project board" width="500" height="300">
+ <img src="./public/images/project-board.png" title="Github Project board" width="500" height="300">
  </div>
 
 ## Key learning highlights
@@ -69,7 +63,7 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 Contact page across differing screen sizes
 
 <div align="center">
-<img src="./assets/images/polypane.png" title="Logon page" width="250" height="150"> 
+<img src="./public/images/polypane.png" title="Logon page" width="250" height="150"> 
 </div>
 
 <div align="left">

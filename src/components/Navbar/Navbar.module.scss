@@ -11,6 +11,7 @@
   padding-bottom: 1em;
   position: relative;
   @include bv.font--primary(500);
+  position: absolute;
 
   &_left_wrapper {
     display: flex;
