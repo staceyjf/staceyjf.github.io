@@ -52,18 +52,6 @@ function Navbar() {
       <div className={styles.nav_left_wrapper}>Stacey Fanner</div>
       {!isMobile && (
         <div className={styles.nav_menu_wrapper}>
-          {/* <Link className={buttonStyles} to="#intro">
-            Home
-          </Link>
-          <Link className={buttonStyles} to="#about">
-            About
-          </Link>
-          <Link className={buttonStyles} to="/">
-            Work
-          </Link>
-          <Link className={buttonStyles} to="/">
-            Contact
-          </Link> */}
           <button
             className={styles.buttonStyles}
             onClick={() => scrollToSection(introRef)}
@@ -86,13 +74,13 @@ function Navbar() {
       {isMobile && isHamburgerOpen && (
         <div className={styles.nav_mobile_wrapper}>
           <button
-            // className={buttonStyles}
+            className={styles.buttonStyles}
             onClick={() => scrollToSection(introRef)}
           >
             Home
           </button>
           <button
-            // className={buttonStyles}
+            className={styles.buttonStyles}
             onClick={() => scrollToSection(aboutRef)}
           >
             About
