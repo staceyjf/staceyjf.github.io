@@ -22,7 +22,7 @@ export const projectsData = [
     projectName: "JavaField",
     projectDesc:
       "A classic Minesweeper game powered by Java and played in the command-line interface (CLI)",
-    tags: ["Java"],
+    tags: ["Java", ""],
     code: "https://github.com/staceyjf/javaMineField",
     demo: "",
     image: "/assets/javaField_homepage.png",

@@ -35,13 +35,12 @@ function IntroSection() {
         />
         <div className={styles.landing_container_right}>
           <div className={styles.landing_container_right_content}>
-            <h6>Aspringing Tech </h6>
+            <h6>Curious | Passionate | Developer </h6>
             <h1>Stacey Fanner</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores
-              dignissimos commodi nam, quo rerum voluptates asperiores non nihil
-              labore, quidem, tempora aliquam dolorum ex illo numquam
-              consequatur quasi recusandae inventore.
+              Hello, I’m Stacey—a former advertising strategist eager to
+              contribute to the dynamic world of technology.
+              <br />
             </p>
 
             <div className={styles.landing_container_right_buttonContainer}>

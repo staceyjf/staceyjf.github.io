@@ -2,10 +2,10 @@
 @use "../../../scss/partials/queries" as q;
 
 .singleProject {
-  box-shadow: 4px 4px 8px rgba(36, 3, 3, 0.2);
-  width: 550px;
+  box-shadow: 10px 10px 35px 4px rgba(0, 0, 0, 0.75);
+  width: 350px;
   margin: auto;
-  height: 460px;
+  height: 400px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
     }
 
     & img {
-      width: 100%;
+      width: 80%;
       height: 60%;
       transition: opacity 0.7s 0.3s;
     }
@@ -71,6 +71,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: bv.$secondary-color-dark;
+    color: white;
   }
 
   .project_lang {
@@ -87,6 +89,8 @@
     transform: translateX(100%);
     transition: transform 0.5s 0.3s;
     padding: 0.825rem;
+    background-color: bv.$secondary-color-dark;
+    color: white;
 
     & > span {
       font-weight: 500;
@@ -95,8 +99,12 @@
     }
   }
 
+  @include q.tablet {
+    width: 450px;
+  }
+
   @include q.phone {
-    width: 300px;
+    width: 90%;
   }
 }
 
@@ -115,16 +123,16 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid bv.$secondary-color-dark;
-  color: bv.$secondary-color-dark;
+  border: 2px solid bv.$primary-color-dark;
+  color: bv.$primary-color-dark;
   transition: all 0.2s;
 }
 
 .iconBtn:hover {
-  background-color: bv.$secondary-color;
+  background-color: bv.$primary-color;
   color: white;
   transform: scale(1.1);
-  border: 2px solid bv.$secondary-color;
+  border: 2px solid bv.$primary-color;
 }
 
 .icon {
@@ -132,6 +140,6 @@
   transition: all 0.2s;
 }
 
-// .singleProject:hover .project--showcaseBtn a:nth-child(2) {
-//     transform: translateX(-140px) scale(1.1) !important;
-// }
+.singleProject:hover .project_showcaseBtn a:nth-child(2) {
+  transform: translateX(-140px) scale(1.1) !important;
+}
