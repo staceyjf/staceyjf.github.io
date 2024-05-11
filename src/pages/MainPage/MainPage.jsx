@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import IntroSection from "../../components/IntroSection/IntroSection";
 import AboutSection from "../../components/AboutSection/AboutSection";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
+import BackToTopArrow from "../../components/BackToTopArrow/BackToTopArrow.jsx";
 
 function MainPage() {
   return (
@@ -10,12 +11,7 @@ function MainPage() {
       <IntroSection />
       <AboutSection />
       <ProjectsSection />
-      {/* <Landing />
-      <About />
-      <Skills />
-      <Projects />
-      <Achievement />
-      <Contacts />  */}
+      <BackToTopArrow />
     </div>
   );
 }
