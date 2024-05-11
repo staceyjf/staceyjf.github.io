@@ -1,14 +1,17 @@
-import React from "react";
+import { useContext } from "react";
 
 import { personalData } from "../../data/data.js";
+import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
 
 import Button from "../Button/Button";
 import styles from "./IntroSection.module.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 
 function IntroSection() {
+  const { introRef } = useContext(NavigationContext);
+
   return (
-    <div className={styles.landing}>
+    <div ref={introRef} className={styles.landing}>
       <div className={styles.landing_container}>
         <div className={styles.landing_container_left}>
           <div className={styles.landing_container_left_content}>
@@ -58,5 +61,3 @@ function IntroSection() {
 }
 
 export default IntroSection;
-
-//https://github.com/sreerag-rajan/developer-portfolio/blob/main/src/components/Landing/Landing.js

@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import IntroSection from "../../components/IntroSection/IntroSection";
+import AboutSection from "../../components/AboutSection/AboutSection";
 
 function MainPage() {
   useEffect(() => {
@@ -12,6 +13,7 @@ function MainPage() {
     <div>
       <Navbar />
       <IntroSection />
+      <AboutSection />
       {/* <Landing />
       <About />
       <Skills />

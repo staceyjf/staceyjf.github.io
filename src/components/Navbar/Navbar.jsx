@@ -1,8 +1,9 @@
 import { useState, useEffect, useContext } from "react";
-import { NavLink } from "react-router-dom";
 
 import useScreenSize from "../../hooks/useScreenSize";
 import HamburgerMenu from "../Navbar/HamburgerMenu.jsx";
+
+import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
 
 import styles from "./Navbar.module.scss";
 
@@ -10,6 +11,8 @@ function Navbar() {
   const screenSize = useScreenSize();
   const [isMobile, setIsMobile] = useState(true);
   const [isHamburgerOpen, setIsHamburgerOpen] = useState(false);
+  const { introRef, aboutRef, projectsRef, contactRef } =
+    useContext(NavigationContext);
 
   // custom hook to detect screensize which then switches between hamburger menu
   // full  menu
@@ -19,9 +22,11 @@ function Navbar() {
   };
 
   //
-  const linkStyles = ({ isActive }) => {
-    return isActive ? `${styles.link} ${styles.link_active}` : `${styles.link}`;
-  };
+  // const buttonStyles = ({ isActive }) => {
+  //   return isActive
+  //     ? `${styles.buttonStyles} ${styles.buttonStyles_active}`
+  //     : `${styles.buttonStyles}`;
+  // };
 
   useEffect(() => {
     detectMobileOrTablet();
@@ -32,6 +37,14 @@ function Navbar() {
     setIsHamburgerOpen(!isHamburgerOpen);
   };
 
+  // scroll to my sections
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop, // takes us to the top of the section
+      behavior: "smooth",
+    });
+  };
+
   return (
     <nav
       className={`${styles.nav} ${isHamburgerOpen ? "" : "hamburger_close"}`}
@@ -39,18 +52,30 @@ function Navbar() {
       <div className={styles.nav_left_wrapper}>Stacey Fanner</div>
       {!isMobile && (
         <div className={styles.nav_menu_wrapper}>
-          <NavLink className={linkStyles} to="/">
+          {/* <Link className={buttonStyles} to="#intro">
             Home
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
+          </Link>
+          <Link className={buttonStyles} to="#about">
             About
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
+          </Link>
+          <Link className={buttonStyles} to="/">
             Work
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
+          </Link>
+          <Link className={buttonStyles} to="/">
             Contact
-          </NavLink>
+          </Link> */}
+          <button
+            className={styles.buttonStyles}
+            onClick={() => scrollToSection(introRef)}
+          >
+            Home
+          </button>
+          <button
+            className={styles.buttonStyles}
+            onClick={() => scrollToSection(aboutRef)}
+          >
+            About
+          </button>
         </div>
       )}
       {isMobile && (
@@ -60,18 +85,18 @@ function Navbar() {
       )}
       {isMobile && isHamburgerOpen && (
         <div className={styles.nav_mobile_wrapper}>
-          <NavLink className={linkStyles} to="/">
+          <button
+            // className={buttonStyles}
+            onClick={() => scrollToSection(introRef)}
+          >
             Home
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
+          </button>
+          <button
+            // className={buttonStyles}
+            onClick={() => scrollToSection(aboutRef)}
+          >
             About
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
-            Work
-          </NavLink>
-          <NavLink className={linkStyles} to="/">
-            Contact
-          </NavLink>
+          </button>
         </div>
       )}
     </nav>
