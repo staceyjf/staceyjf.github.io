@@ -4,6 +4,7 @@ import { personalData } from "../../data/data.js";
 import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
 
 import Button from "../Button/Button";
+
 import styles from "./IntroSection.module.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
 

@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import IntroSection from "../../components/IntroSection/IntroSection";
 import AboutSection from "../../components/AboutSection/AboutSection";
+import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 
 function MainPage() {
   return (
@@ -8,6 +9,7 @@ function MainPage() {
       <Navbar />
       <IntroSection />
       <AboutSection />
+      <ProjectsSection />
       {/* <Landing />
       <About />
       <Skills />
