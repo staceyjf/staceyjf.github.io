@@ -52,7 +52,7 @@
   @include q.tablet {
     &_header h2 {
       font-size: 3rem;
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
 
     &_bodyContainer {
@@ -65,9 +65,13 @@
   }
 
   @include q.phone {
-    &_header h2 {
-      font-size: 2.5rem;
-      margin-bottom: 20px;
+    row-gap: 1em;
+    &_header {
+      margin-top: 2em;
+
+      & h2 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
