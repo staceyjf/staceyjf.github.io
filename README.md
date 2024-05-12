@@ -2,20 +2,18 @@
 
 This web-based application serves as a showcase for the exciting projects I am currently working on.
 
-<!-- <div align="center">
+<div align="center">
 
-  <img src="./assets/images/desktop-homepage.png" alt="Homepage Screenshot" style="border: 1px solid black ">
+  <img src="./public/images/desktop-homepage.png" alt="Homepage Screenshot" style="border: 1px solid black ">
 
-</div> -->
+</div>
 
  <br>
 To see the deployed site: https://www.staceyfanner.com
 
 ## About the Web App
 
-Built with vanilla HTML, CSS, and JS, it was a good opportunity to get back to the fundamentals.
-
-It serves as a first draft which I plan to iterate on throughout the next couple of months as my skills expand through the nology course that I am currently embarked on.
+With deepened React skills, I revamped my vanilla JS portfolio with React. It was great to be able to introduce
 
 ## Planning
 
@@ -49,21 +47,14 @@ It serves as a first draft which I plan to iterate on throughout the next couple
 
 ## Challenges
 
-1. Designing responsively - balancing where to use Grid vs Flexbox
-
-## To-Dos
-
-1. Add logos to 'About me' section for tech
-2. Revise the grid structure to 4-8-12 across media queries for better responsive design
-3. Streamline overlapping CSS for grid design and font
-4. Increase position of top-nav so content scrolls underneath it
+1. Designing responsively - balancing landscape and portrait formats to have a good design across different devices.
 
 ## Screengrabs
 
 Contact page across differing screen sizes
 
 <div align="center">
-<img src="./public/images/polypane.png" title="Logon page" width="250" height="150"> 
+<img src="./public/images/polypane.png" title="Logon page" width="500" height="300"> 
 </div>
 
 <div align="left">
@@ -72,12 +63,12 @@ Contact page across differing screen sizes
 
 <div align="center">
 
+![React](https://img.shields.io/badge/-React-05122A?style=flat&logo=react)
 ![HTML5](https://img.shields.io/badge/-HTML5-05122A?style=flat&logo=html5)
 ![CSS3](https://img.shields.io/badge/-CSS3-05122A?style=flat&logo=css3)
 ![Sass](https://img.shields.io/badge/-Sass-05122A?style=flat&logo=sass)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-05122A?style=flat&logo=javascript)
 ![Polypane](https://img.shields.io/badge/-Polypane-05122A?style=flat&logo=polypane)
-![Swiper.js](https://img.shields.io/badge/-SwiperJS-05122A?style=flat&logo=swiperJS)
 ![Git](https://img.shields.io/badge/-Git-05122A?style=flat&logo=git)
 ![GitHub](https://img.shields.io/badge/-GitHub-05122A?style=flat&logo=github)
 

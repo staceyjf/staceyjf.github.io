@@ -11,10 +11,10 @@ import styles from "./ProjectsSection.module.scss";
 function ProjectsSection() {
   const { projectsRef } = useContext(NavigationContext);
 
-  useEffect(() => {
-    document.title = "Explore my projects";
-    return () => (document.title = "Welcome to Stacey Fanner's portfolio");
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Explore my projects";
+  //   return () => (document.title = "Welcome to Stacey Fanner's portfolio");
+  // }, []);
 
   return (
     <>

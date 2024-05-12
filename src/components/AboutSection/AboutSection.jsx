@@ -7,10 +7,10 @@ import styles from "./AboutSection.module.scss";
 function AboutSection() {
   const { aboutRef } = useContext(NavigationContext);
 
-  useEffect(() => {
-    document.title = "Getting to know me";
-    return () => (document.title = "Welcome to Stacey Fanner's portfolio");
-  }, []);
+  // useEffect(() => {
+  //   document.title = "Getting to know me";
+  //   return () => (document.title = "Welcome to Stacey Fanner's portfolio");
+  // }, []);
 
   return (
     <div className={styles.about} ref={aboutRef}>
