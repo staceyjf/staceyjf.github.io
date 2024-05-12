@@ -13,7 +13,7 @@ To see the deployed site: https://www.staceyfanner.com
 
 ## About the Web App
 
-With deepened React skills, I revamped my vanilla JS portfolio with React. It was great to be able to introduce
+With deepened React skills, I revamped my vanilla JS portfolio with React. 
 
 ## Planning
 
