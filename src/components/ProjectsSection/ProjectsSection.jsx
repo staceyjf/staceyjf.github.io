@@ -40,7 +40,10 @@ function ProjectsSection() {
             </div>
           </div>
           <div>
-            <Button className={styles.projects_button} buttonText="View all" />
+            <Button
+              className={styles.projectsButton}
+              buttonText="DISCOVER MORE"
+            />
           </div>
         </div>
       )}

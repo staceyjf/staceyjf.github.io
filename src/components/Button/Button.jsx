@@ -1,8 +1,8 @@
 import styles from "./Button.module.scss";
 
-function Button({ buttonText, SvgIcon }) {
+function Button({ buttonText, SvgIcon, className }) {
   return (
-    <button className={styles.button}>
+    <button className={`${styles.button} ${className}`}>
       {SvgIcon && <SvgIcon />}
       {buttonText}
     </button>

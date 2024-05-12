@@ -42,8 +42,11 @@
     margin: auto;
   }
 
-  &_button {
-    background-color: aqua !important;
+  @include q.laptop {
+    row-gap: 4em;
+    &_header {
+      margin-top: 1rem;
+    }
   }
 
   @include q.tablet {
@@ -67,11 +70,8 @@
       margin-bottom: 20px;
     }
   }
+}
 
-  @include q.laptop {
-    row-gap: 4em;
-    &_header {
-      margin-top: 1rem;
-    }
-  }
+.projectsButton {
+  background-color: bv.$secondary-color;
 }

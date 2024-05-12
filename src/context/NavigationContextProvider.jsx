@@ -5,6 +5,7 @@ export const NavigationContext = createContext(null);
 function NavigationContextProvider({ children }) {
   const introRef = useRef(null);
   const aboutRef = useRef(null);
+  const skilssRef = useRef(null);
   const projectsRef = useRef(null);
   const contactRef = useRef(null);
 

@@ -70,6 +70,12 @@ function Navbar() {
           >
             Work
           </button>
+          <button
+            className={styles.buttonStyles}
+            onClick={() => scrollToSection(contactRef)}
+          >
+            Contact
+          </button>
         </div>
       )}
       {isMobile && (
@@ -96,6 +102,12 @@ function Navbar() {
             onClick={() => scrollToSection(projectsRef)}
           >
             Work
+          </button>
+          <button
+            className={styles.buttonStyles}
+            onClick={() => scrollToSection(contactRef)}
+          >
+            Contact
           </button>
         </div>
       )}

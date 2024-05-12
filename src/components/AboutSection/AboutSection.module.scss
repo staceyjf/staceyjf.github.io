@@ -25,15 +25,22 @@
     width: 100%;
     height: fit-content;
 
-    & h2 {
-      margin-bottom: 40px;
-      font-size: 3.5rem;
-    }
-
     & p {
       font-size: 1rem;
       color: bv.$dark-color;
       margin-bottom: 1em;
+    }
+  }
+
+  &_header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    & h2 {
+      font-size: 3.5rem;
+      text-align: center;
     }
   }
 

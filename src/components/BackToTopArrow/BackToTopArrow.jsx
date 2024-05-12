@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaCircleChevronUp } from "react-icons/fa6";
 
 import styles from "./BackToTopArrow.module.scss";
@@ -22,7 +22,12 @@ function BackToTopArrow() {
     });
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisible);
+    return () => {
+      window.removeEventListener("scroll", toggleVisible);
+    };
+  }, []);
 
   return (
     <div

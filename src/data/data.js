@@ -4,6 +4,7 @@ export const personalData = {
     "https://drive.google.com/uc?export=download&id=1RiaDrUzCYdnO48OyG9txdHNigiy_JW0Z",
   linkedIn: "https://www.linkedin.com/in/staceyfanner/",
   gitHub: "https://github.com/staceyjf",
+  email: "staceyfanner@gmail.com",
 };
 
 export const projectsData = [
@@ -11,7 +12,7 @@ export const projectsData = [
     id: 1,
     projectName: "theMarketPlace",
     projectDesc:
-      "theMarketPlace is a React front-end e-commerce application designed to provide users with an immersive shopping experience for luxury fashion items. Leveraging React and FireBase, it offers a seamless interface for browsing products.",
+      "theMarketPlace is front-end e-commerce app designed to provide users with an immersive shopping experience for luxury fashion items.",
     tags: ["React", "FireStore", "Sass"],
     code: "https://github.com/staceyjf/theMarketPlace",
     demo: "https://portfolio.staceyfanner.com/theMarketPlace/",
@@ -29,9 +30,9 @@ export const projectsData = [
   },
   {
     id: 3,
-    projectName: "theMarketPlace",
+    projectName: "theBookVerse",
     projectDesc:
-      "theBookVerse is a comprehensive and intuitive books app designed to bring the world of literature to your fingertips. With theBookVerse, users can effortlessly explore an extensive library of books, discover new titles, and delve into detailed information about their favorite books.",
+      "With theBookVerse, users can effortlessly explore an extensive library of books, discover new titles, and delve into detailed information about their favorite books.",
     tags: ["React", "Google Books API", "Sass"],
     code: "https://github.com/staceyjf/theBookVerse",
     demo: "https://portfolio.staceyfanner.com/theBookVerse/",

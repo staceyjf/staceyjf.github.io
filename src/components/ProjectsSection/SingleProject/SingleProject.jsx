@@ -9,6 +9,7 @@ function SingleProject({ id, name, desc, tags, code, demo, image }) {
         <h2 id={name.replace(" ", "-").toLowerCase()}>{name}</h2>
         <img src={image} alt={name} />
         <div className={styles.project_showcaseBtn}>
+          {/* Demo icon */}
           <a
             href={demo}
             target="_blank"
@@ -24,6 +25,8 @@ function SingleProject({ id, name, desc, tags, code, demo, image }) {
               aria-label="Demo"
             />
           </a>
+
+          {/* Code icon */}
           <a
             href={code}
             target="_blank"

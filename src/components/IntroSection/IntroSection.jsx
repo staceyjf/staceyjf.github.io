@@ -4,9 +4,8 @@ import { personalData } from "../../data/data.js";
 import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
 
 import Button from "../Button/Button";
-
-import styles from "./IntroSection.module.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa6";
+import styles from "./IntroSection.module.scss";
 
 function IntroSection() {
   const { introRef } = useContext(NavigationContext);
@@ -50,7 +49,7 @@ function IntroSection() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button buttonText="Download CV" />
+                <Button buttonText="DOWNLOAD CV" />
               </a>
             </div>
           </div>

@@ -16,7 +16,9 @@ function AboutSection() {
     <div className={styles.about} ref={aboutRef}>
       <div className={styles.about_body}>
         <div className={styles.about_description}>
-          <h2>Facts about me</h2>
+          <div className={styles.about_header}>
+            <h2>Facts about me</h2>
+          </div>
           <div className={styles.about_option_item}>
             <h4 className={styles.about_option_h4}>
               I used to be in <span>advertising</span>
@@ -37,7 +39,7 @@ function AboutSection() {
               developer.
             </p>
           </div>
-          <div className={styles.about_option_item}>
+          {/* <div className={styles.about_option_item}>
             <h4 className={styles.about_option_h4}>
               I'm passionate about<span> human-centric design</span>
             </h4>
@@ -45,14 +47,14 @@ function AboutSection() {
               The greatest value comes from balancing the needs of end-users
               with business objectives.
             </p>
-          </div>
+          </div> */}
           <div className={styles.about_option_item}>
             <h4 className={styles.about_option_h4}>
-              I have a <span>world record</span>
+              I'm passionate about<span> human-centric design</span>
             </h4>
             <p className={styles.about_option_p}>
-              I was part of a 5,877-strong crowd in London that set the Guinness
-              World record for the largest coconut ensemble.
+              The greatest value comes from balancing the needs & wants of
+              end-users with the deliverables of the business.
             </p>
           </div>
         </div>
