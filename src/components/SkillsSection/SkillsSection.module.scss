@@ -12,11 +12,13 @@
 
   &_header {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 5em;
 
     & h2 {
-      font-size: 3.5rem;
+      font-size: 3.3rem;
       text-align: center;
     }
   }
@@ -75,8 +77,11 @@
       margin: 1rem 0;
     }
 
-    &_header h2 {
-      font-size: 3.2rem;
+    &_header {
+      padding-top: 2rem;
+      & h2 {
+        font-size: 3rem;
+      }
     }
   }
 

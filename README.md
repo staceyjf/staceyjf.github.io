@@ -7,9 +7,9 @@ This web-based application serves as a showcase for the exciting projects I am c
   <img src="./assets/images/desktop-homepage.png" alt="Homepage Screenshot" style="border: 1px solid black ">
 
 </div> -->
- 
+
  <br>
-To see the deployed site: https://portfolio.staceyfanner.com
+To see the deployed site: https://www.staceyfanner.com
 
 ## About the Web App
 

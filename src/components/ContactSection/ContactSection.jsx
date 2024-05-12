@@ -1,13 +1,7 @@
 import { useContext } from "react";
 
 import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
-import { personalData } from "../../data/data.js";
-
 import { contactData } from "../../data/contactData.js";
-
-import { HiOutlineMailOpen } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
 
 import styles from "./ContactSection.module.scss";
 
@@ -25,7 +19,7 @@ function ContactSection() {
               Drop me a line or see what I'm currently up to.
             </h2>
           </div>
-          {/* Right side */}
+          {/* Right side - loop through contact details */}
           <div className={styles.contact_details}>
             {contactData.map((contact) => {
               return (
@@ -41,33 +35,6 @@ function ContactSection() {
                 </a>
               );
             })}
-            {/* <a
-              href={`mailto:${personalData.email}`}
-              className={styles.contact_personal_details}
-            >
-              <div className={styles.contact_icon}>
-                <HiOutlineMailOpen />
-              </div>
-              <p>{personalData.email}</p>
-            </a>
-            <a
-              href={`mailto:${personalData.linkedIn}`}
-              className={styles.contact_personal_details}
-            >
-              <div className={styles.contact_icon}>
-                <FaLinkedin />
-              </div>
-              <p>{personalData.linkedIn}</p>
-            </a>
-            <a
-              href={`mailto:${personalData.gitHub}`}
-              className={styles.contact_personal_details}
-            >
-              <div className={styles.contact_icon}>
-                <FaGithubSquare />
-              </div>
-              <p>{personalData.gitHub}</p>
-            </a> */}
           </div>
         </div>
       </div>

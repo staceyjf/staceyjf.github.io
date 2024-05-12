@@ -13,7 +13,8 @@ function SkillsSection() {
   return (
     <div ref={skillsRef} className={styles.skills}>
       <div className={styles.skills_header}>
-        <h2>Skills I'm currently mastering</h2>
+        <h2>Skills in my toolbox</h2>
+        <p>Working hard to master</p>
       </div>
       <div className={styles.skills_container}>
         <div className={styles.skills_skillScroll}>

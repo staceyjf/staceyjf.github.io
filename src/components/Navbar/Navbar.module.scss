@@ -64,6 +64,7 @@
 }
 
 .buttonStyles {
+  @include bv.font--primary(600);
   padding-left: 0.5em;
   text-transform: uppercase;
   background: none;

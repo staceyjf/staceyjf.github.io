@@ -20,7 +20,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    row-gap: 1em;
+    row-gap: 3em;
     flex: 0.7;
     width: 100%;
     height: fit-content;
@@ -71,7 +71,7 @@
 
   @include q.tablet {
     &_body {
-      padding-top: 2rem;
+      padding: 5rem;
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
@@ -90,6 +90,10 @@
   }
 
   @include q.phone {
+    &_body {
+      padding: 0;
+    }
+
     &_description h2 {
       font-size: 2.5rem;
     }

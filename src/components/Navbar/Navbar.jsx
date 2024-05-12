@@ -54,12 +54,6 @@ function Navbar() {
         <div className={styles.nav_menu_wrapper}>
           <button
             className={styles.buttonStyles}
-            onClick={() => scrollToSection(introRef)}
-          >
-            Home
-          </button>
-          <button
-            className={styles.buttonStyles}
             onClick={() => scrollToSection(aboutRef)}
           >
             About
@@ -85,12 +79,6 @@ function Navbar() {
       )}
       {isMobile && isHamburgerOpen && (
         <div className={styles.nav_mobile_wrapper}>
-          <button
-            className={styles.buttonStyles}
-            onClick={() => scrollToSection(introRef)}
-          >
-            Home
-          </button>
           <button
             className={styles.buttonStyles}
             onClick={() => scrollToSection(aboutRef)}
