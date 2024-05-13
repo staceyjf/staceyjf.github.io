@@ -9,7 +9,6 @@
   min-height: 100vh;
   overflow-x: hidden;
   padding: 2rem;
-  @include bv.font--primary(400);
   row-gap: 2em;
 
   &_header {
@@ -18,10 +17,6 @@
     justify-content: center;
     width: 100%;
     margin: 0.75rem;
-
-    & h2 {
-      font-size: 3.5rem;
-    }
   }
 
   &_body {
@@ -44,17 +39,9 @@
 
   @include q.laptop {
     row-gap: 4em;
-    &_header {
-      margin-top: 1rem;
-    }
   }
 
   @include q.tablet {
-    &_header h2 {
-      font-size: 3rem;
-      margin-top: 30px;
-    }
-
     &_bodyContainer {
       display: flex;
       flex-direction: column;
@@ -66,16 +53,5 @@
 
   @include q.phone {
     row-gap: 1em;
-    &_header {
-      margin-top: 2em;
-
-      & h2 {
-        font-size: 2.5rem;
-      }
-    }
   }
-}
-
-.projectsButton {
-  background-color: bv.$secondary-color;
 }

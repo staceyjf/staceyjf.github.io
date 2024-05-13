@@ -20,7 +20,7 @@ function SkillsSection() {
         <div className={styles.skills_skillScroll}>
           <Marquee
             gradient={false}
-            speed={20}
+            speed={50}
             pauseOnHover={true}
             pauseOnClick={true}
             delay={0}

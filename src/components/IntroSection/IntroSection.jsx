@@ -41,7 +41,6 @@ function IntroSection() {
               contribute to the dynamic world of technology.
               <br />
             </p>
-
             <div className={styles.landing_container_right_buttonContainer}>
               <a
                 href={personalData.cvPdf}

@@ -18,6 +18,6 @@ export const contactData = [
     name: "email",
     url: "mailto:staceyfanner@gmail.com",
     displayName: "staceyfanner.com",
-    icon: "devicon-google-plain",
+    icon: "fa-solid fa-envelope",
   },
 ];

@@ -14,7 +14,7 @@ function ContactSection() {
         <div className={styles.contact_body}>
           {/* Left side */}
           <div className={styles.contact_left}>
-            <h2 className={styles.contact_title}>Let's Stay in Touch</h2>
+            <h2 className={styles.contact_title}>Let's stay in touch.</h2>
             <h2 className={styles.contact_title}>
               Drop me a line or see what I'm currently up to.
             </h2>

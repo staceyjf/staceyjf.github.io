@@ -4,7 +4,6 @@
 .about {
   min-height: 100vh;
   position: relative;
-  @include bv.font--primary(400);
 
   &_body {
     display: flex;
@@ -26,9 +25,7 @@
     height: fit-content;
 
     & p {
-      font-size: 1rem;
       color: bv.$dark-color;
-      margin-bottom: 1em;
     }
   }
 
@@ -37,11 +34,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-
-    & h2 {
-      font-size: 3.5rem;
-      text-align: center;
-    }
   }
 
   &_option {
@@ -54,18 +46,10 @@
 
     &_h4 {
       margin: 0 0 0.25em 0;
-      font-size: 1.75rem;
 
       > span {
-        color: bv.$secondary-color;
+        color: bv.$primary-color;
       }
-    }
-  }
-
-  @media (min-width: 901px) and (max-width: 1380px) {
-    &_description h2 {
-      font-size: 3.3rem;
-      margin-bottom: 30px;
     }
   }
 
@@ -82,34 +66,11 @@
       flex: 0.6;
       padding: 20px;
     }
-
-    &_description h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
   }
 
   @include q.phone {
     &_body {
       padding: 0;
-    }
-
-    &_header {
-      margin-top: 2em;
-    }
-
-    &_description h2 {
-      font-size: 2.5rem;
-    }
-
-    &_description p {
-      font-size: 0.95rem;
-    }
-
-    &_option {
-      &_h4 {
-        font-size: 1.5rem;
-      }
     }
   }
 }

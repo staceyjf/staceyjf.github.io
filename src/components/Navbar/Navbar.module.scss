@@ -72,13 +72,13 @@
   color: black;
   cursor: pointer;
   &:hover {
-    color: bv.$primary-color-dark;
+    color: bv.$highlight-color-primary;
   }
 
   &_active {
     color: bv.$secondary-color;
     &:hover {
-      color: bv.$primary-color-dark;
+      color: bv.$highlight-color-primary;
     }
   }
 }

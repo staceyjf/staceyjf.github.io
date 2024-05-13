@@ -49,7 +49,7 @@ function Navbar() {
     <nav
       className={`${styles.nav} ${isHamburgerOpen ? "" : "hamburger_close"}`}
     >
-      <div className={styles.nav_left_wrapper}>Stacey Fanner</div>
+      {/* <div className={styles.nav_left_wrapper}>Stacey Fanner</div> */}
       {!isMobile && (
         <div className={styles.nav_menu_wrapper}>
           <button

@@ -34,10 +34,6 @@
     flex: 1;
     row-gap: 1rem;
     padding: 0 5rem;
-
-    & h2 {
-      font-size: 3.5rem;
-    }
   }
 
   &_details {
@@ -64,7 +60,6 @@
 
     & p {
       margin-left: 1.5rem;
-      font-size: 18px;
       line-height: 110%;
       font-weight: 500;
       word-break: break-word;
@@ -72,7 +67,7 @@
   }
 
   &_icon {
-    background-color: bv.$primary-color-dark;
+    background-color: bv.$primary-color;
     color: white;
     border-radius: 50%;
     width: 45px;
@@ -86,7 +81,7 @@
 
     &:hover {
       transform: scale(1.1);
-      background-color: bv.$primary-color;
+      background-color: bv.$secondary-color;
       color: white;
     }
   }
@@ -97,9 +92,6 @@
     }
 
     &_left {
-      & h2 {
-        margin-top: 1rem;
-      }
     }
   }
 
@@ -117,11 +109,6 @@
 
     &_left {
       text-align: center;
-
-      & h2 {
-        font-size: 3rem;
-        margin-bottom: 30px;
-      }
     }
 
     &_details {
@@ -150,10 +137,6 @@
 
       &_left {
         padding: 0;
-        & h2 {
-          font-size: 2.5rem;
-          margin-bottom: 20px;
-        }
       }
     }
   }
