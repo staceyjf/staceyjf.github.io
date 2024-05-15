@@ -6,17 +6,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  min-height: 20vh;
+  min-height: 30vh;
   padding: 2.5rem 2rem 2rem 2rem;
-  @include bv.font--primary(400);
   background-color: #eaeaea;
+  row-gap: 2em;
 
   &_header {
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 5em;
+    padding-top: 2em;
   }
 
   &_container {
@@ -24,7 +23,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 3.5rem;
     padding: 0 2rem;
   }
 
@@ -56,8 +54,6 @@
   }
 
   @include q.laptop {
-    padding: 2rem 1rem 1rem 1rem;
-
     &_container {
       padding: 1.5rem;
       margin-top: 1.5rem;
@@ -65,22 +61,18 @@
   }
 
   @include q.tablet {
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem;
     min-height: 100%;
 
     &_container {
       padding: 1rem;
       margin: 1rem 0;
     }
-
-    &_header {
-      padding-top: 2rem;
-    }
   }
 
-  @include q.phone {
-    &_header {
-      margin-top: 2em;
-    }
-  }
+  // @include q.phone {
+  //   &_header {
+  //     // margin-top: 2em;
+  //   }
+  // }
 }

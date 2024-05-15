@@ -34,6 +34,7 @@
     flex: 1;
     row-gap: 1rem;
     padding: 0 5rem;
+    text-align: center;
   }
 
   &_details {
@@ -89,9 +90,6 @@
   @include q.laptop {
     &_container {
       padding: 2rem 4rem;
-    }
-
-    &_left {
     }
   }
 

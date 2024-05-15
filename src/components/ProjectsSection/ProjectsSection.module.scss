@@ -8,15 +8,14 @@
   justify-content: flex-start;
   min-height: 100vh;
   overflow-x: hidden;
-  padding: 2rem;
+  padding: 2.5rem 2rem 2rem 2rem;
   row-gap: 2em;
 
   &_header {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    margin: 0.75rem;
+    padding-top: 2em;
   }
 
   &_body {
@@ -33,13 +32,12 @@
     align-items: center;
     justify-content: center;
     grid-gap: 2.5rem;
-    width: 90%;
     margin: auto;
   }
 
-  @include q.laptop {
-    row-gap: 4em;
-  }
+  // @include q.laptop {
+  //   row-gap: 4em;
+  // }
 
   @include q.tablet {
     &_bodyContainer {
