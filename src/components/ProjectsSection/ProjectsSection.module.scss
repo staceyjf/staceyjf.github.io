@@ -10,6 +10,7 @@
   overflow-x: hidden;
   padding: 2rem;
   row-gap: 2em;
+  position: relative;  
 
   &_header {
     display: flex;
@@ -25,6 +26,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    row-gap: 2rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &_bodyContainer {
@@ -42,12 +47,22 @@
   }
 
   @include q.tablet {
+    position: static;
+
+    &_body {
+      position: static;
+      top: auto;
+      transform: none;
+    }
+
+
     &_bodyContainer {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       width: 100%;
+      row-gap: 1rem;
     }
   }
 

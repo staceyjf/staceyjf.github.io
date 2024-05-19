@@ -38,8 +38,6 @@ function ProjectsSection() {
                 />
               ))}
             </div>
-          </div>
-          <div>
             <a
               href="https://github.com/staceyjf"
               target="_blank"

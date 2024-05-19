@@ -14,7 +14,13 @@ function SkillsSection() {
     <div ref={skillsRef} className={styles.skills}>
       <div className={styles.skills_header}>
         <h2>Skills in my toolbox</h2>
-        <p>Working hard to master</p>
+        <p>
+          Currently working hard to deepen my skills across core languages,
+          frameworks, and databases. I am also exploring new technologies and
+          best practices to stay ahead in the rapidly evolving tech landscape.
+          My goal is to build robust, scalable applications that deliver
+          seamless user experiences.
+        </p>
       </div>
       <div className={styles.skills_container}>
         <div className={styles.skills_skillScroll}>

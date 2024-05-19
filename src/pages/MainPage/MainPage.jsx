@@ -12,7 +12,7 @@ function MainPage() {
       <Navbar />
       <IntroSection />
       <AboutSection />
-      <SkillsSection />
+      {/* <SkillsSection /> */}
       <ProjectsSection />
       <ContactSection />
       <BackToTopArrow />

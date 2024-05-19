@@ -2,6 +2,8 @@ import { useContext, useEffect } from "react";
 
 import { NavigationContext } from "../../context/NavigationContextProvider.jsx";
 
+import SkillsSection from "../SkillsSection/SkillsSection.jsx";
+
 import styles from "./AboutSection.module.scss";
 
 function AboutSection() {
@@ -39,15 +41,6 @@ function AboutSection() {
               developer.
             </p>
           </div>
-          {/* <div className={styles.about_option_item}>
-            <h4 className={styles.about_option_h4}>
-              I'm passionate about<span> human-centric design</span>
-            </h4>
-            <p className={styles.about_option_p}>
-              The greatest value comes from balancing the needs of end-users
-              with business objectives.
-            </p>
-          </div> */}
           <div className={styles.about_option_item}>
             <h4 className={styles.about_option_h4}>
               I'm passionate about<span> human-centric design</span>
@@ -59,6 +52,7 @@ function AboutSection() {
           </div>
         </div>
       </div>
+      <SkillsSection />
     </div>
   );
 }
