@@ -40,10 +40,16 @@ function ProjectsSection() {
             </div>
           </div>
           <div>
-            <Button
-              className={styles.projectsButton}
-              buttonText="DISCOVER MORE"
-            />
+            <a
+              href="https://github.com/staceyjf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button
+                className={styles.projectsButton}
+                buttonText="DISCOVER MORE"
+              />
+            </a>
           </div>
         </div>
       )}

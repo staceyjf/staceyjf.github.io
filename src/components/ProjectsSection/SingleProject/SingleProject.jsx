@@ -10,21 +10,23 @@ function SingleProject({ id, name, desc, tags, code, demo, image }) {
         <img src={image} alt={name} />
         <div className={styles.project_showcaseBtn}>
           {/* Demo icon */}
-          <a
-            href={demo}
-            target="_blank"
-            rel="noreferrer"
-            className={styles.iconBtn}
-            aria-labelledby={`${name.replace(" ", "-").toLowerCase()} ${name
-              .replace(" ", "-")
-              .toLowerCase()}-demo`}
-          >
-            <FaPlay
-              id={`${name.replace(" ", "-").toLowerCase()}-demo`}
-              className={styles.icon}
-              aria-label="Demo"
-            />
-          </a>
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noreferrer"
+              className={styles.iconBtn}
+              aria-labelledby={`${name.replace(" ", "-").toLowerCase()} ${name
+                .replace(" ", "-")
+                .toLowerCase()}-demo`}
+            >
+              <FaPlay
+                id={`${name.replace(" ", "-").toLowerCase()}-demo`}
+                className={styles.icon}
+                aria-label="Demo"
+              />
+            </a>
+          )}
 
           {/* Code icon */}
           <a

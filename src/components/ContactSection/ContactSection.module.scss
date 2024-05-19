@@ -9,6 +9,7 @@
   position: relative;
   @include bv.font--primary(400);
   background-color: #eaeaea;
+  font-al
 
   &_container {
     display: flex;
@@ -34,6 +35,7 @@
     flex: 1;
     row-gap: 1rem;
     padding: 0 5rem;
+    text-align: center;
   }
 
   &_details {
@@ -42,7 +44,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    padding: 0 5rem;
+    padding: 2rem 5rem;
   }
 
   &_personal_details {
@@ -91,8 +93,6 @@
       padding: 2rem 4rem;
     }
 
-    &_left {
-    }
   }
 
   @include q.tablet {
@@ -105,10 +105,6 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    &_left {
-      text-align: center;
     }
 
     &_details {

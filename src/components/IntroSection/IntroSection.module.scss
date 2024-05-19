@@ -100,16 +100,16 @@
 
     & p {
       margin-top: 1.45rem;
-      font-weight: 500;
       opacity: 0.7;
       line-height: 135%;
+      margin-bottom: 1rem;
+
     }
 
     &_buttonContainer {
       width: 350px;
       display: flex;
       align-items: center;
-      justify-content: flex-end;
     }
   }
 
@@ -172,7 +172,6 @@
         width: 200px;
         height: 120px;
         align-items: flex-start;
-        justify-content: center;
       }
     }
   }
@@ -249,10 +248,9 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
 
         & button {
-          margin-top: -20%;
+          margin-top: 1rem;
         }
       }
     }
