@@ -13,7 +13,7 @@ To see the deployed site: https://www.staceyfanner.com
 
 ## About the Web App
 
-With deepened React skills, I revamped my vanilla JS portfolio with React. 
+With deepened React skills, I revamped my vanilla JS portfolio with React.
 
 ## Planning
 
@@ -48,6 +48,21 @@ With deepened React skills, I revamped my vanilla JS portfolio with React.
 ## Challenges
 
 1. Designing responsively - balancing landscape and portrait formats to have a good design across different devices.
+
+## Changelog
+
+Date: 29/05/24
+
+Updates:
+
+**About Page Improvements:**
+
+- Enhanced Spacing: Updated the spacing on the About page to improve the layout and readability across different devices.
+  - Mobile: Optimized the layout to ensure better spacing and alignment on small screens.
+  - Tablet: Adjusted spacing to provide a more balanced and visually appealing layout on medium-sized screens.
+  - Desktop: Refined the spacing for a cleaner and more organized appearance on large screens.
+
+These changes aim to enhance the user experience by ensuring that the About page is visually consistent and easy to navigate, regardless of the device being used.
 
 ## Screengrabs
 

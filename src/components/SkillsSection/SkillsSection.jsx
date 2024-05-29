@@ -12,23 +12,20 @@ function SkillsSection() {
 
   return (
     <div ref={skillsRef} className={styles.skills}>
-      <div className={styles.skills_header}>
+      {/* <div className={styles.skills_header}>
         <h2>Skills in my toolbox</h2>
         <p>
           Currently working hard to deepen my skills across core languages,
-          frameworks, and databases. I am also exploring new technologies and
-          best practices to stay ahead in the rapidly evolving tech landscape.
-          My goal is to build robust, scalable applications that deliver
-          seamless user experiences.
+          frameworks, and databases.
         </p>
-      </div>
+      </div> */}
       <div className={styles.skills_container}>
         <div className={styles.skills_skillScroll}>
           <Marquee
             gradient={false}
             speed={50}
-            pauseOnHover={true}
-            pauseOnClick={true}
+            pauseOnHover={false}
+            pauseOnClick={false}
             delay={0}
             play={true}
             direction="left"

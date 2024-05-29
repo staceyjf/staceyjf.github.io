@@ -10,7 +10,7 @@
   overflow-x: hidden;
   padding: 2rem;
   row-gap: 2em;
-  position: relative;  
+  position: relative;
 
   &_header {
     display: flex;
@@ -43,7 +43,11 @@
   }
 
   @include q.laptop {
-    row-gap: 4em;
+    row-gap: 5em;
+
+    &_body {
+      row-gap: 2rem;
+    }
   }
 
   @include q.tablet {
@@ -54,7 +58,6 @@
       top: auto;
       transform: none;
     }
-
 
     &_bodyContainer {
       display: flex;

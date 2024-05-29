@@ -6,47 +6,28 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 2rem;
+  padding: 0 2rem 2rem 2rem;
   @include bv.font--primary(400);
-  // background-color: #eaeaea;
-
-  &_header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    text-align: center;
-
-    & h2 {
-      margin-bottom: 2rem;;
-    }
-
-    & p {
-      line-height: 135%;
-    }
-  }
 
   &_container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-top: 3.5rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
   }
 
   &_skillScroll {
     width: 100%;
-    margin: 0 2rem;
+    margin: 0 4rem;
   }
 
   &_box {
     background: #fafafa;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin: 1.5rem;
     display: flex;
     flex-direction: column;
@@ -63,32 +44,7 @@
     }
   }
 
-  @include q.laptop {
-    padding: 2rem 1rem 1rem 1rem;
-
-    &_container {
-      padding: 1.5rem;
-      margin-top: 1.5rem;
-    }
-  }
-
-  @include q.tablet {
-    padding: 1rem;
-    min-height: 100%;
-
-    &_container {
-      padding: 1rem;
-      margin: 1rem 0;
-    }
-
-    &_header {
-      padding-top: 2rem;
-    }
-  }
-
   @include q.phone {
-    &_header {
-      margin-top: 2em;
-    }
+    padding: 0 1rem 1rem 1rem;
   }
 }

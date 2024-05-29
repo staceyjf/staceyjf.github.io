@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    row-gap: 3em;
+    row-gap: 4em;
     flex: 0.8;
     width: 100%;
     height: fit-content;
@@ -43,7 +43,6 @@
     &_item {
       display: flex;
       flex-direction: column;
-      // border-bottom: 1px solid black;
       row-gap: 0.75em;
     }
 
@@ -58,7 +57,6 @@
 
   @include q.tablet {
     &_body {
-      padding: 5rem;
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
@@ -68,12 +66,19 @@
     &_description {
       flex: 0.6;
       padding: 20px;
+      row-gap: 4em;
     }
   }
 
   @include q.phone {
+    padding: 1rem;
+
     &_body {
       padding: 0;
+    }
+
+    &_description {
+      row-gap: 1em;
     }
   }
 }

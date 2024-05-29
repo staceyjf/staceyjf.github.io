@@ -9,11 +9,6 @@ import styles from "./AboutSection.module.scss";
 function AboutSection() {
   const { aboutRef } = useContext(NavigationContext);
 
-  // useEffect(() => {
-  //   document.title = "Getting to know me";
-  //   return () => (document.title = "Welcome to Stacey Fanner's portfolio");
-  // }, []);
-
   return (
     <div className={styles.about} ref={aboutRef}>
       <div className={styles.about_body}>
@@ -48,6 +43,16 @@ function AboutSection() {
             <p className={styles.about_option_p}>
               The greatest value comes from balancing the needs & wants of
               end-users with the deliverables of the business.
+            </p>
+          </div>
+          <div className={styles.about_option_item}>
+            <h4 className={styles.about_option_h4}>
+              I'm working to constantly
+              <span> upskilling </span>tools in my toolbox
+            </h4>
+            <p className={styles.about_option_p}>
+              Building across a diverse range of languages, front and back-end
+              frameworks, testing and databases.
             </p>
           </div>
         </div>
