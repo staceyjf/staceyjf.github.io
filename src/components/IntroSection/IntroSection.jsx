@@ -34,7 +34,7 @@ function IntroSection() {
         />
         <div className={styles.landing_container_right}>
           <div className={styles.landing_container_right_content}>
-            <h6>Curious | Passionate | Developer </h6>
+            <h6>Curious | Passionate | Full Stack Engineer </h6>
             <h1>Stacey Fanner</h1>
             <p>
               Hello, I’m Stacey—a former advertising strategist eager to

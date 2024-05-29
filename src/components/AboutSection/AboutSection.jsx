@@ -47,12 +47,13 @@ function AboutSection() {
           </div>
           <div className={styles.about_option_item}>
             <h4 className={styles.about_option_h4}>
-              I'm working to constantly
-              <span> upskilling </span>tools in my toolbox
+              I'm dedicated to
+              <span> continuous learning </span>
             </h4>
             <p className={styles.about_option_p}>
               Building across a diverse range of languages, front and back-end
-              frameworks, testing and databases.
+              frameworks, testing and databases, I work to continual upskill the
+              tools in my toolbox.
             </p>
           </div>
         </div>
