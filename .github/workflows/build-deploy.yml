@@ -24,7 +24,7 @@ jobs:
 
       - name: Building project
         run: npm run build
-  
+
       - name: Uploading production-ready build files
         uses: actions/upload-artifact@v2
         with:
@@ -47,5 +47,5 @@ jobs:
       - name: Deploying to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GH_PAT }}
+          github_token: ${{ secrets.GH_PORTFOLIO }}
           publish_dir: ./dist
