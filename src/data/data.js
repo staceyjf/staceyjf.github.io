@@ -9,6 +9,16 @@ export const personalData = {
 
 export const projectsData = [
   {
+    id: 4,
+    projectName: "SpringTasker",
+    projectDesc:
+      "SpringTasker is a full-stack application that lets you keep track of all your todos with unique color categorization to make it easier to see your most urgent tasks.",
+    tags: ["React", "Typescript", "Spring Boot"],
+    code: "https://github.com/staceyjf/SpringTasker",
+    demo: "",
+    image: "/assets/springtasker.png",
+  },
+  {
     id: 1,
     projectName: "theMarketPlace",
     projectDesc:
@@ -28,14 +38,14 @@ export const projectsData = [
     demo: "",
     image: "/assets/javaField_homepage.png",
   },
-  {
-    id: 3,
-    projectName: "theBookVerse",
-    projectDesc:
-      "With theBookVerse, users can effortlessly explore an extensive library of books, discover new titles, and delve into detailed information about their favorite books.",
-    tags: ["React", "Google Books API", "Sass"],
-    code: "https://github.com/staceyjf/theBookVerse",
-    demo: "https://www.staceyfanner.com/theBookVerse/",
-    image: "/assets/theBookVerse_homepage.png",
-  },
+  // {
+  //   id: 3,
+  //   projectName: "theBookVerse",
+  //   projectDesc:
+  //     "With theBookVerse, users can effortlessly explore an extensive library of books, discover new titles, and delve into detailed information about their favorite books.",
+  //   tags: ["React", "Google Books API", "Sass"],
+  //   code: "https://github.com/staceyjf/theBookVerse",
+  //   demo: "https://www.staceyfanner.com/theBookVerse/",
+  //   image: "/assets/theBookVerse_homepage.png",
+  // },
 ];
