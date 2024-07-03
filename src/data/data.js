@@ -1,7 +1,7 @@
 export const personalData = {
   image: "/assets/StaceyFanner_profile_img.jpg",
   cvPdf:
-    "https://drive.google.com/uc?export=download&id=1RiaDrUzCYdnO48OyG9txdHNigiy_JW0Z",
+    "https://drive.google.com/uc?export=download&id=1GP7g31BugFK9DPg56H_SS2nmxC2sNWid",
   linkedIn: "https://www.linkedin.com/in/staceyfanner/",
   gitHub: "https://github.com/staceyjf",
   email: "staceyfanner@gmail.com",
@@ -9,14 +9,14 @@ export const personalData = {
 
 export const projectsData = [
   {
-    id: 4,
-    projectName: "SpringTasker",
+    id: 5,
+    projectName: "PostCheck",
     projectDesc:
-      "SpringTasker is a full-stack application that lets you keep track of all your todos with unique color categorization to make it easier to see your most urgent tasks.",
-    tags: ["React", "Typescript", "Spring Boot"],
-    code: "https://github.com/staceyjf/SpringTasker",
+      "PostCheck is a full-stack application that helps you source suburb and postcode information with ease.",
+    tags: ["React", "Typescript", "Flask"],
+    code: "https://github.com/staceyjf/PostCheck-API-Flask",
     demo: "",
-    image: "/assets/springtasker.png",
+    image: "/assets/postcheckAPI.gif",
   },
   {
     id: 1,
@@ -29,15 +29,25 @@ export const projectsData = [
     image: "/assets/themarketPlace_homepage.png",
   },
   {
-    id: 2,
-    projectName: "JavaField",
+    id: 4,
+    projectName: "SpringTasker",
     projectDesc:
-      "A classic Minesweeper game powered by Java and played in the command-line interface (CLI)",
-    tags: ["Java", ""],
-    code: "https://github.com/staceyjf/javaMineField",
+      "SpringTasker is a full-stack application that lets you keep track of all your todos with unique color categorization to make it easier to see your most urgent tasks.",
+    tags: ["React", "Typescript", "Spring Boot"],
+    code: "https://github.com/staceyjf/SpringTasker",
     demo: "",
-    image: "/assets/javaField_homepage.png",
+    image: "/assets/springtasker.png",
   },
+  // {
+  //   id: 2,
+  //   projectName: "JavaField",
+  //   projectDesc:
+  //     "A classic Minesweeper game powered by Java and played in the command-line interface (CLI)",
+  //   tags: ["Java", ""],
+  //   code: "https://github.com/staceyjf/javaMineField",
+  //   demo: "",
+  //   image: "/assets/javaField_homepage.png",
+  // },
   // {
   //   id: 3,
   //   projectName: "theBookVerse",

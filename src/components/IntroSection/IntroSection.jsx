@@ -37,7 +37,7 @@ function IntroSection() {
             <h6>Curious | Passionate | Full Stack Engineer </h6>
             <h1>Stacey Fanner</h1>
             <p>
-              Hello, I’m Stacey—a former advertising strategist eager to
+              Hello, I’m Stacey — a former advertising strategist eager to
               contribute to the dynamic world of technology.
               <br />
             </p>

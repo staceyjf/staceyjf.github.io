@@ -64,6 +64,12 @@ Updates:
 
 These changes aim to enhance the user experience by ensuring that the About page is visually consistent and easy to navigate, regardless of the device being used.
 
+Date: 03/07/24
+
+Updates:
+
+1. Project and CV update to reflect latest achievements. 
+
 ## Screengrabs
 
 Contact page across differing screen sizes

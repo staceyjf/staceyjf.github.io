@@ -22,6 +22,11 @@
     opacity: 0;
   }
 
+  img[src$=".gif"] {
+    width: 450px;
+    height: auto;
+  }
+
   .projectContent {
     display: flex;
     flex-direction: column;
