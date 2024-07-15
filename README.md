@@ -68,7 +68,9 @@ Date: 03/07/24
 
 Updates:
 
-1. Project and CV update to reflect latest achievements. 
+**Admin Improvements:**
+
+1. Project and CV update to reflect latest achievements.
 
 ## Screengrabs
 

@@ -15,7 +15,7 @@ export const projectsData = [
       "PostCheck is a full-stack application that helps you source suburb and postcode information with ease.",
     tags: ["React", "Typescript", "Flask"],
     code: "https://github.com/staceyjf/PostCheck-API-Flask",
-    demo: "",
+    demo: "https://www.staceyfanner.com/Postcheck-front/",
     image: "/assets/postcheckAPI.gif",
   },
   {
